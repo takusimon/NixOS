@@ -13,39 +13,6 @@ flake.nixosModules.myMachineHardware = { config, lib, pkgs, modulesPath, ... }:
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
-  fileSystems."/" =
-    { device = "/dev/disk/by-uuid/c008f1cd-a60f-4bd8-9b65-09d7f4cc3776";
-      fsType = "btrfs";
-      options = [ "subvol=@" ];
-    };
-
-  fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/c008f1cd-a60f-4bd8-9b65-09d7f4cc3776";
-      fsType = "btrfs";
-      options = [ "subvol=@home" ];
-    };
-
-  fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/c008f1cd-a60f-4bd8-9b65-09d7f4cc3776";
-      fsType = "btrfs";
-      options = [ "subvol=@nix" ];
-    };
-
-  fileSystems."/persist" =
-    { device = "/dev/disk/by-uuid/c008f1cd-a60f-4bd8-9b65-09d7f4cc3776";
-      fsType = "btrfs";
-      options = [ "subvol=@persist" ];
-    };
-
-  fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/BA63-8FD4";
-      fsType = "vfat";
-      options = [ "fmask=0022" "dmask=0022" ];
-    };
-
-  swapDevices =
-    [ { device = "/dev/disk/by-uuid/e6a57516-4256-41d6-a3a1-d47621d0a29f"; }
-    ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;

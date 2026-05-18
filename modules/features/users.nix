@@ -5,6 +5,7 @@
 	users.users.taku = {
 		isNormalUser = true;
 		description = "taku";
+		initialPassword = "12345";
 		extraGroups = [ "networkmanager" "wheel" ];
 		packages = with pkgs; [
 			google-chrome
