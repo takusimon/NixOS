@@ -11,7 +11,14 @@ flake.nixosModules.services = {config,pkgs,...}: {
 			};
 		};
 		# Enable the GNOME Desktop Environment.
-		displayManager.gdm.enable = true;
+		displayManager = { 
+			gdm.enable = false;
+			dms-greeter = {
+				enable = true;
+				compositor.name = "niri";
+				package = inputs.dms.packages.${pkgs.stdenv.hostPlatform.system}.default;
+			};
+		};
 		desktopManager.gnome.enable = true;
 		# Enable CUPS to print documents.
 		printing.enable = true;
@@ -26,6 +33,7 @@ flake.nixosModules.services = {config,pkgs,...}: {
 		};
 		openssh.enable = true;
 
+		emacs.enable = true;
 	};
 
 	security = {

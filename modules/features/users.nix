@@ -5,7 +5,7 @@
 	users.users.taku = {
 		isNormalUser = true;
 		description = "taku";
-		initialPassword = "12345";
+		hashedPassword = "$y$j9T$OXc7sJ9CuMK1RNI8XHpIO1$IQpCd1VcN5ByYKflg0MR3WXA6OiJ2Utvtp1siaGa3iD";
 		extraGroups = [ "networkmanager" "wheel" ];
 		packages = with pkgs; [
 			google-chrome
@@ -15,6 +15,7 @@
 			fastfetch
 			imagemagick
 			yazi
+			kitty
 
 		];
 	};

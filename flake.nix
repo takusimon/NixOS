@@ -4,10 +4,14 @@
 
 		flake-parts.url = "github:hercules-ci/flake-parts";
 		import-tree.url = "github:vic/import-tree";
-		disko.url = "github:nix-community/disko";
-		disko.inputs.nixpkgs.follows = "nixpkgs";
-
-		preservation.url = "github:nix-community/preservation";
+		quickshell = {
+		      url = "git+https://git.outfoxxed.me/quickshell/quickshell";
+		      inputs.nixpkgs.follows = "nixpkgs";
+		};
+		dms = {
+		      url = "github:AvengeMedia/DankMaterialShell/stable";
+		      inputs.nixpkgs.follows = "nixpkgs";
+		};
 
 	};
 
@@ -22,8 +26,6 @@
 
 		imports = [
 			  (inputs.import-tree ./modules)
-			inputs.disko.nixosModules.disko
-			inputs.preservation.nixosModules.default
 		];
 	};
 }
