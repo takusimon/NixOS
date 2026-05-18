@@ -17,7 +17,7 @@ flake.nixosModules.preservation = { config,pkgs, ... }: {
 		
 		files = [
 			{
-				"/etc/machine-id"
+				file ="/etc/machine-id";
 				inInitrd = true;
 			}
 		];
@@ -34,6 +34,8 @@ flake.nixosModules.preservation = { config,pkgs, ... }: {
 			".bashrc"
 			".gitconfig"
 		];
+	};
+	};
 	};
 };
 }

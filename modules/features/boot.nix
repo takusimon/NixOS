@@ -15,7 +15,7 @@
 				efiSysMountPoint = "/boot";
 				canTouchEfiVariables = true;
 			};
-			};
+		};
 		# Use latest kernel.
 		kernelPackages = pkgs.linuxPackages_latest;
 

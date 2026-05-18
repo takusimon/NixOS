@@ -22,6 +22,8 @@
 
 		imports = [
 			  (inputs.import-tree ./modules)
+			inputs.disko.nixosModules.disko
+			inputs.preservation.nixosModules.default
 		];
 	};
 }
