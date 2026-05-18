@@ -1,27 +1,21 @@
 {self, inputs, ...}:{
   flake.nixosModules.users = { config, pkgs, ...}:
 {
-   users.users.taku = {
-	isNormalUser = true;
-	extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
-        packages = with pkgs; [
-		discord
-		obsidian
-		conda
-		google-chrome
-		anki
-    fuzzel
-    waybar
-    xdg-desktop-portal-gnome
-    xdg-desktop-portal
-    wl-clipboard
-    cliphist
-    dunst
-    hyprpaper
-    hyprlock
-    hypridle
-    nautilus
-        ];
-   };
+	# Define a user account. Don't forget to set a password with ‘passwd’.
+	users.users.taku = {
+		isNormalUser = true;
+		description = "taku";
+		extraGroups = [ "networkmanager" "wheel" ];
+		packages = with pkgs; [
+			google-chrome
+			anki
+			obsidian
+			starship
+			fastfetch
+			imagemagick
+			yazi
+
+		];
+	};
 };
 }

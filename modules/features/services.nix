@@ -1,36 +1,35 @@
 {self, inputs, ...}: {
 flake.nixosModules.services = {config,pkgs,...}: {
 	services = {
-		displayManager = {
-			sddm = {
-				enable = true;
-        wayland.enable = true;
-        theme = "sddm-astronaut";
+		# Enable the X11 windowing system.
+		xserver = { 
+			enable = true;
+			# Configure keymap in X11
+			xkb = {
+				layout = "us";
+				variant = "";
 			};
 		};
-    pipewire = {
-
-    enable = true;
-
-    audio = {
-        enable = true;
-      };
-
-    wireplumber = {
-      enable = true;
-    };
-    
-    system-wide = true;
-
-    }
-		xserver.enable = true;
-    tlp.enable = true;
-    gnome.gnome-keyring.enable = true;
+		# Enable the GNOME Desktop Environment.
+		displayManager.gdm.enable = true;
+		desktopManager.gnome.enable = true;
+		# Enable CUPS to print documents.
+		printing.enable = true;
+		# Enable sound with pipewire.
+		pulseaudio.enable = false;
+		pipewire = {
+			enable = true;
+			alsa.enable = true;
+			alsa.support32Bit = true;
+			pulse.enable = true;
+			wireplumber.enable = true;
+		};
 		openssh.enable = true;
-		upower.enable = true;
+
 	};
-	hardware = {
-		bluetooth.enable = true;
+
+	security = {
+		rtkit.enable = true;
 	};
 };
 }
