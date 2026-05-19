@@ -15,6 +15,7 @@ flake.nixosModules.env = {pkgs, ...}: {
 		ncdu
 		btop
 		emacs-pgtk
+		clang
 	];
 };
 }

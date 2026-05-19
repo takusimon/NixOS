@@ -17,9 +17,10 @@ flake.nixosModules.services = {config,pkgs,...}: {
 				enable = true;
 				compositor.name = "niri";
 				package = inputs.dms.packages.${pkgs.stdenv.hostPlatform.system}.default;
+				configHome = "/home/taku";
 			};
 		};
-		desktopManager.gnome.enable = true;
+		desktopManager.gnome.enable = false;
 		# Enable CUPS to print documents.
 		printing.enable = true;
 		# Enable sound with pipewire.
@@ -33,9 +34,14 @@ flake.nixosModules.services = {config,pkgs,...}: {
 		};
 		openssh.enable = true;
 
-		emacs.enable = true;
+		emacs = {
+			enable = true;
+			defaultEditor = true;
+		};
+		upower.enable = true;
+		acpid.enable = true;
 	};
-
+	systemd.user.services.niri-flake-polkit.enable = false;
 	security = {
 		rtkit.enable = true;
 	};
