@@ -16,7 +16,6 @@
 			imagemagick
 			yazi
 			kitty
-
 		];
 	};
 };
