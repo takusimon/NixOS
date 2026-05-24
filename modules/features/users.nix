@@ -18,6 +18,11 @@
 			kitty
 			papirus-icon-theme
 			kdePackages.qt6ct
+			awww
+			waybar
+			rofi
+			swaynotificationcenter
+			matugen
 		];
 	};
 };
