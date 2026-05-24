@@ -16,6 +16,8 @@
 			imagemagick
 			yazi
 			kitty
+			papirus-icon-theme
+			kdePackages.qt6ct
 		];
 	};
 };

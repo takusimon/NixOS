@@ -4,14 +4,6 @@
 
 		flake-parts.url = "github:hercules-ci/flake-parts";
 		import-tree.url = "github:vic/import-tree";
-		quickshell = {
-		      url = "git+https://git.outfoxxed.me/quickshell/quickshell";
-		      inputs.nixpkgs.follows = "nixpkgs";
-		};
-		dms = {
-		      url = "github:AvengeMedia/DankMaterialShell/stable";
-		      inputs.nixpkgs.follows = "nixpkgs";
-		};
 
 	};
 
