@@ -16,6 +16,7 @@ flake.nixosModules.env = {pkgs, ...}: {
 		btop
 		emacs-pgtk
 		clang
+		brightnessctl
 	];
 };
 }

@@ -23,6 +23,11 @@
 			rofi
 			swaynotificationcenter
 			matugen
+			cava
+			hyprlock
+			hypridle
+			hyprpolkitagent
+			wlogout
 		];
 	};
 };

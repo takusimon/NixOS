@@ -33,6 +33,7 @@ flake.nixosModules.services = {config,pkgs,...}: {
 			defaultEditor = true;
 		};
 		upower.enable = true;
+		tlp.enable = true;
 		acpid.enable = true;
 	};
 	systemd.user.services.niri-flake-polkit.enable = false;
