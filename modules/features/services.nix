@@ -14,7 +14,7 @@ flake.nixosModules.services = {config,pkgs,...}: {
 		displayManager = { 
 			gdm.enable = true;
 		};
-		desktopManager.gnome.enable = false;
+		desktopManager.gnome.enable = true;
 		# Enable CUPS to print documents.
 		printing.enable = true;
 		# Enable sound with pipewire.
@@ -35,6 +35,7 @@ flake.nixosModules.services = {config,pkgs,...}: {
 		upower.enable = true;
 		tlp.enable = true;
 		acpid.enable = true;
+		power-profiles-daemon.enable = false;
 	};
 	systemd.user.services.niri-flake-polkit.enable = false;
 	security = {

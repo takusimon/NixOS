@@ -28,6 +28,10 @@
 			hypridle
 			hyprpolkitagent
 			wlogout
+			nwg-look
+			gtk-engine-murrine
+			darkly
+			adw-gtk3
 		];
 	};
 };
