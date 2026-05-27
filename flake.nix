@@ -4,6 +4,10 @@
 
 		flake-parts.url = "github:hercules-ci/flake-parts";
 		import-tree.url = "github:vic/import-tree";
+		home-manager = {
+			     url = "github:nix-community/home-manager";
+			     inputs.nixpkgs.follows = "nixpkgs";
+		};
 
 	};
 
@@ -17,6 +21,7 @@
 		};
 
 		imports = [
+			  inputs.home-manager.flakeModules.home-manager
 			  (inputs.import-tree ./modules)
 		];
 	};

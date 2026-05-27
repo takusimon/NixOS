@@ -1,7 +1,7 @@
 {self, inputs, ...}:{
   flake.nixosModules.users = { config, pkgs, ...}:
 {
-	# Define a user account. Don't forget to set a password with ‘passwd’.
+
 	users.users.taku = {
 		isNormalUser = true;
 		description = "taku";
@@ -32,6 +32,11 @@
 			gtk-engine-murrine
 			darkly
 			adw-gtk3
+			grim
+			slurp
+			wl-clipboard
+			cliphist
+			zoom-us
 		];
 	};
 };
