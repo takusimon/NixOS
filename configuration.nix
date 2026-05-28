@@ -8,7 +8,7 @@
       ./modules/nix.nix
       ./modules/system.nix
       ./modules/services.nix
-      ./modules/users.nix
+      ./modules/user.nix
       ./modules/host.nix
 ];
 }

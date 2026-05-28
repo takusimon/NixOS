@@ -2,7 +2,7 @@
      #Set Hostname,timezone and locale settings
 
      networking = {
-     	hostname = "kernelpanic"
+     	hostName = "kernelpanic";
 	networkmanager.enable = true;
     };
 

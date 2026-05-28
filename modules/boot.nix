@@ -7,12 +7,12 @@
 		    	 enable = true;
 			 efiSupport = true;
 			 device = "nodev";
-			 tiemoutStyle = "menu";
+			 timeoutStyle = "menu";
 			 configurationLimit = 10;
 		   };
 
 		   efi = {
-		       efiSysMountPOint = "/boot";
+		       efiSysMountPoint = "/boot";
 		       canTouchEfiVariables = true;
 		   };
 	    };

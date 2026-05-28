@@ -16,4 +16,5 @@ users.users = {
 		 nodejs_26
 		 ];
 	  };
+};
 }
