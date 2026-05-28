@@ -1,9 +1,30 @@
 {config,pkgs,...}: {
     #Set system services sound, desktop manager, etc
     services = {
-    	    displayManager.plasma-login-manager.enable = true;
-	    desktopManager.plasma6.enable = true;
+    	    displayManager.ly.enable = true;
+	    xserver = {
+	    	    enable = true;
 
+		    libinput = {
+		     enable = true;
+		    };
+		    windowManager.i3 = {
+		     enable = true;
+		     extraPackages = with pkgs; [
+		       dmenu
+		       i3status
+		       i3lock
+		     ];
+		    };
+	    	    desktopManager = {
+		      xterm.enable = false;
+		      xfce = {
+		        enable = true;
+			noDesktop = true;
+			enableXfwm = false;
+		      };
+		    };
+            };
 	    printing.enable = false;
 
 	    pulseaudio.enable = false;

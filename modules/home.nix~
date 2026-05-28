@@ -1,0 +1,5 @@
+{config,pkgs,...}:{
+  home-manger = {
+    useUserPackages = true;
+    useGlobalPkgs = true;
+    backupFileExtention = "bk";

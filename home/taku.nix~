@@ -1,0 +1,25 @@
+{config,pkgs,...}:{
+ home = {
+  username = "taku";
+  homeDirectory = "/home/taku";
+  stateVersion = "26.05";
+ };
+ programs = {
+   bash = {
+     enable = true;
+     shellAliases = {
+       ls = "ls -a";
+     };
+     historySize = 10000;
+     bashrcExtra = ''
+     
+     # Ignore case on auto-completion  
+     if [[ $iatest > 0 ]]; then bind "set completion-ignore-case on"; fi
+     
+     # Show auto-completion list automatically, without double tab 
+     if [[ $iatest > 0 ]]; then bind "set show-all-if-ambiguous On"; fi
+     eval "$(starship init bash)"
+     '';
+  };
+ };
+}

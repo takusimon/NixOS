@@ -21,14 +21,13 @@
 		    imagemagick
 		    yazi
 		    kitty
+		    fastfetch
+		    starship
 		    ];
 
 		    shellAliases = {
 		    		 emacs = "emacs -nw";
 		    };
 
-		    plasma6.excludePackages = with pkgs.kdePackages; [
-		    konsole
-		    ];
 	};
 }
