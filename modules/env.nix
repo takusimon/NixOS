@@ -5,7 +5,6 @@
 	environment = {
 		    systemPackages = with pkgs; [
 		    vim
-		    tmux
 		    zip
 		    unzip
 		    git
@@ -20,9 +19,9 @@
 		    obsidian
 		    imagemagick
 		    yazi
-		    kitty
 		    fastfetch
 		    starship
+		    picom
 		    ];
 
 		    shellAliases = {

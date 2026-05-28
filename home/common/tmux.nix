@@ -1,5 +1,6 @@
 {config,pkgs,...}:{
 programs.tmux = {
+  enable = true;
   prefix = "c-a";
   keyMode = "vi";
   terminal = "tmux-256color";
