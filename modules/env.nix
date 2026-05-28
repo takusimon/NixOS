@@ -1,0 +1,34 @@
+{config,pkgs,...}:{
+	# Set Packages available system wide
+	# Set system wide Aliases system wide
+
+	environment = {
+		    systemPackages = with pkgs; [
+		    vim
+		    tmux
+		    zip
+		    unzip
+		    git
+		    gnutar
+		    gnumake
+		    gcc
+		    ncdu
+		    btop
+		    emacs-pgtk
+		    clang
+		    google-chrome
+		    obsidian
+		    imagemagick
+		    yazi
+		    kitty
+		    ];
+
+		    shellAliases = {
+		    		 emacs = "emacs -nw";
+		    };
+
+		    plasma6.excludePackages = with pkgs.kdePackages; [
+		    konsole
+		    ];
+	};
+}

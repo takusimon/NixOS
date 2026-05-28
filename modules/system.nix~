@@ -1,0 +1,10 @@
+{config,pkgs,...}: {
+      #autoUpgrades
+
+      system = {
+      	     autoUpgrade = {
+	     		 enable = true;
+			 allowReboot = false;
+	     };
+      };
+ }
