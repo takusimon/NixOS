@@ -2,9 +2,9 @@
     #Set system services sound, desktop manager, etc
     services = {
     	    displayManager = {
-	    ly.enable = true;
+	    ly.enable = false;
 	    dms-greeter = {
-	      enable = false;
+	      enable = true;
 	      compositor.name = "niri";
 	      configHome = "/home/taku";
 	    };

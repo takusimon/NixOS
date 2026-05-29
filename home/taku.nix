@@ -12,7 +12,7 @@ home = {
        ".config/niri/".source = ./dot_files/niri;
        ".config/fastfetch/".source = ./dot_files/fastfetch;
        ".config/starship.toml".source = ./dot_files/starship.toml;
-  
+       ".config/DankMaterialShell".source = ./dot_files/DankMaterialShell;  
   };
  };
 }
