@@ -6,6 +6,7 @@ imports = [
 	./common/git.nix
 	./common/gtk-qt.nix
 	./common/niri.nix
+	.common/matugen.nix
 	];
 home = {
   username = "taku";
@@ -13,7 +14,7 @@ home = {
   stateVersion = "26.05";
   file = {
        ".config/fastfetch/".source = ./dot_files/fastfetch;
-       ".config/matugen/".source = ./dot_files/matugen;
+       ".config/matugen/colors".source = ./dot_files/matugen/colors;
        ".config/DankMaterialShell".source = ./dot_files/DankMaterialShell;  
   };
  };

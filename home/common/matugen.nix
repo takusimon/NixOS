@@ -1,4 +1,6 @@
-[config]
+{config,pkgs,...}:{
+home.file.".config/matugen/config.toml".text = ''
+ [config]
 
 
 [templates.kitty]
@@ -44,3 +46,5 @@ output_path = '~/.config/emacs/colors.css'
 input_path = '~/.config/matugen/colors/niri-colors.kdl'
 output_path = '~/.config/niri/colors.kdl'
 post_hook = 'niri msg action load-config-file'
+'';
+}
