@@ -6,7 +6,7 @@ imports = [
 	./common/git.nix
 	./common/gtk-qt.nix
 	./common/niri.nix
-	.common/matugen.nix
+	./common/matugen.nix
 	];
 home = {
   username = "taku";
