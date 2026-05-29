@@ -6,6 +6,8 @@ programs.kitty = {
     size = 12;
   };
   autoThemeFiles.dark = "Catppuccin-Mocha";
+  autoThemeFiles.light = "Catppuccin-Mocha";
+  autoThemeFiles.noPreference = "Catppuccin-Mocha";
   extraConfig = ''
     cursor_trail 3
     url_style curly

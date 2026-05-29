@@ -1,28 +1,14 @@
 {config,pkgs,...}: {
     #Set system services sound, desktop manager, etc
     services = {
-    	    displayManager.ly.enable = true;
-	    xserver = {
-	    	    enable = true;
-
-		    libinput = {
-		     enable = true;
-		    };
-		    windowManager.i3 = {
-		     enable = true;
-		     extraPackages = with pkgs; [
-		       dmenu
-		     ];
-		    };
-	    	    desktopManager = {
-		      xterm.enable = false;
-		      xfce = {
-		        enable = true;
-			noDesktop = true;
-			enableXfwm = false;
-		      };
-		    };
-            };
+    	    displayManager = {
+	    ly.enable = true;
+	    dms-greeter = {
+	      enable = false;
+	      compositor.name = "niri";
+	      configHome = "/home/taku";
+	    };
+	    };
 	    printing.enable = false;
 
 	    pulseaudio.enable = false;
@@ -40,5 +26,7 @@
 	   	 enable = true;
 		 defaultEditor = true;
 	   };
+
+	   upower.enable = true;
     };
 }
