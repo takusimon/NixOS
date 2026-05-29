@@ -5,13 +5,13 @@ imports = [
 	./common/tmux.nix
 	./common/git.nix
 	./common/gtk-qt.nix
+	./common/niri.nix
 	];
 home = {
   username = "taku";
   homeDirectory = "/home/taku";
   stateVersion = "26.05";
   file = {
-       ".config/niri/".source = ./dot_files/niri;
        ".config/fastfetch/".source = ./dot_files/fastfetch;
        ".config/matugen/".source = ./dot_files/matugen;
        ".config/DankMaterialShell".source = ./dot_files/DankMaterialShell;  

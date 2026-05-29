@@ -1,14 +1,14 @@
 {config,pkgs,...}:{
   qt = {
    enable = true;
-   qt5ctsettings = {
+   qt5ctSettings = {
     Appearance = {
      color_scheme_path = "~/.config/qt5ct/colors/matugen.conf";
      custom_palette = "true";
     };
    };
 
-  qt6ctsettings = {
+  qt6ctSettings = {
    Appearance = {
      color_scheme_path = "~/.config/qt5ct/colors/matugen.conf";
      custom_palette = "true";
