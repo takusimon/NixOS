@@ -3,6 +3,7 @@ imports = [
 	./common/bash.nix
 	./common/kitty.nix
 	./common/tmux.nix
+	./common/git.nix
 	];
 home = {
   username = "taku";
