@@ -23,7 +23,7 @@
      	         ./modules/home-manager.nix
 		 attrs.disko.nixosModules.disko
 		 attrs.preservation.nixosModules.default
-		 ./features/disk.nix
+		 ./features/disko.nix
 		 ./features/preservation.nix
 	       ];
     };
