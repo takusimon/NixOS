@@ -7,6 +7,11 @@
     	url =  "github:nix-community/home-manager";
 	inputs.nixpkgs.follows = "nixpkgs";
     };
+    preservation.url = "github:nix-community/preservation";
+    disko = {
+       url = "github:nix-community/disko";
+       inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs,home-manager,... }@attrs: {
@@ -16,6 +21,8 @@
      modules = [ ./configuration.nix
      	         home-manager.nixosModules.home-manager
      	         ./modules/home-manager.nix
+		 attrs.disko.nixosModules.disko
+		 attrs.preservation.nixosModules.default
 	       ];
     };
   };
