@@ -22,6 +22,9 @@
 		    fastfetch
 		    starship
 		    picom
+		    polybar
+		    feh
+		    killall
 		    ];
 
 		    shellAliases = {
