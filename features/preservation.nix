@@ -9,6 +9,7 @@
         "/var/log"
 	"/var/lib/bluetooth"
 	"/etc/NetworkManager/system-connections"
+	"/root"
         {
           directory = "/var/lib/nixos";
           inInitrd = true;
@@ -28,6 +29,8 @@
            ".ssh"
            ".config/google-chrome"
 	   ".config/obsidian"
+	   ".config/niri"
+	   ".local/state"
 	   "Pictures"
 	   "Documents"
          ];

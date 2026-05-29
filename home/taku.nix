@@ -7,15 +7,15 @@ imports = [
 	./common/gtk-qt.nix
 	./common/niri.nix
 	./common/matugen.nix
+	./common/fastfetch.nix
+	./common/dank.nix
 	];
 home = {
   username = "taku";
   homeDirectory = "/home/taku";
   stateVersion = "26.05";
   file = {
-       ".config/fastfetch/".source = ./dot_files/fastfetch;
-       ".config/matugen/colors".source = ./dot_files/matugen/colors;
-       ".config/DankMaterialShell".source = ./dot_files/DankMaterialShell;  
+       ".config/matugen/colors".source = ./colors;
   };
  };
 }

@@ -1,25 +1,21 @@
 {config,pkgs,...}:{
- home = {
+imports = [
+	./common/bash.nix
+	./common/kitty.nix
+	./common/tmux.nix
+	./common/git.nix
+	./common/gtk-qt.nix
+	./common/niri.nix
+	./common/matugen.nix
+	./common/fastfetch.nix
+	.common/dank.nix
+	];
+home = {
   username = "taku";
   homeDirectory = "/home/taku";
   stateVersion = "26.05";
- };
- programs = {
-   bash = {
-     enable = true;
-     shellAliases = {
-       ls = "ls -a";
-     };
-     historySize = 10000;
-     bashrcExtra = ''
-     
-     # Ignore case on auto-completion  
-     if [[ $iatest > 0 ]]; then bind "set completion-ignore-case on"; fi
-     
-     # Show auto-completion list automatically, without double tab 
-     if [[ $iatest > 0 ]]; then bind "set show-all-if-ambiguous On"; fi
-     eval "$(starship init bash)"
-     '';
+  file = {
+       ".config/matugen/colors".source = ./colors;
   };
  };
 }

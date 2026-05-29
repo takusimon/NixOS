@@ -19,7 +19,6 @@
 		    obsidian
 		    imagemagick
 		    yazi
-		    fastfetch
 		    starship
 		    killall
 		    matugen
