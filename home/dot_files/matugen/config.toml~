@@ -1,0 +1,41 @@
+[config]
+
+
+[templates.kitty]
+input_path = '~/.config/matugen/colors/kitty-colors.conf'
+output_path = '~/.config/kitty/themes/Matugen.conf'
+post_hook = 'kitty +kitten themes --reload-in=all Matugen'
+
+[templates.tmux]
+input_path = '~/.config/matugen/colors/tmux-colors.conf'
+output_path = '~/.config/tmux/colors.conf'
+
+[templates.yazi]
+input_path = '~/.config/matugen/colors/yazi-theme.toml'
+output_path = '~/.config/yazi/theme.toml'
+
+# ...
+[templates.gtk3]
+input_path = '~/.config/matugen/colors/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/colors/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+
+[templates.qt6ct]
+input_path = '~/.config/matugen/colors/qtct-colors.conf'
+output_path = '~/.config/qt6ct/colors/matugen.conf'
+
+[templates.starship]
+input_path = '~/.config/matugen/colors/starship.toml'
+output_path = '~/.config/starship.toml'
+
+
+[templates.emacs]
+input_path = '~/.config/matugen/colors/colors.css'
+output_path = '~/.config/emacs/colors.css'
+
+[templates.niri]
+input_path = '~/.config/matugen/colors/niri-colors.kdl'
+output_path = '~/.config/niri'

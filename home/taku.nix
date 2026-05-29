@@ -4,6 +4,7 @@ imports = [
 	./common/kitty.nix
 	./common/tmux.nix
 	./common/git.nix
+	./common/gtk-qt.nix
 	];
 home = {
   username = "taku";
@@ -12,7 +13,7 @@ home = {
   file = {
        ".config/niri/".source = ./dot_files/niri;
        ".config/fastfetch/".source = ./dot_files/fastfetch;
-       ".config/starship.toml".source = ./dot_files/starship.toml;
+       ".config/matugen/".source = ./dot_files/matugen;
        ".config/DankMaterialShell".source = ./dot_files/DankMaterialShell;  
   };
  };

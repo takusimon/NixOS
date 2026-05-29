@@ -22,6 +22,7 @@
 		    fastfetch
 		    starship
 		    killall
+		    matugen
 		    ];
 
 		    shellAliases = {

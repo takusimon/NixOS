@@ -10,12 +10,12 @@ window-rule {
 	border {
 		on
 		width 1	
-		active-color "#bdae93"
-		inactive-color "#504945"
+		active-color "primary"
+		inactive-color "background"
 	}
 
 	tab-indicator {
-		active-color "#98971a"
+		active-color "tertiary"
 
 		
 	}
@@ -48,7 +48,7 @@ window-rule {
 }
 
 window-rule {
-	match app-id="firefox" title="YouTube"
+	match app-id="google-chrome" title="YouTube"
 
 	opacity 1.0
 

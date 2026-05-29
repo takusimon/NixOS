@@ -5,9 +5,7 @@ programs.kitty = {
     name = "JetBrains Mono Nerd Font Mono";
     size = 12;
   };
-  autoThemeFiles.dark = "Catppuccin-Mocha";
-  autoThemeFiles.light = "Catppuccin-Mocha";
-  autoThemeFiles.noPreference = "Catppuccin-Mocha";
+  themeFile = "Matugen";
   extraConfig = ''
     cursor_trail 3
     url_style curly

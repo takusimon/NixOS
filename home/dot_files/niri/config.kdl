@@ -1,3 +1,4 @@
+include "colors.kdl"
 include "binds.kdl"
 include "windowRules.kdl"
 include "layout.kdl"
@@ -37,7 +38,7 @@ blur {
      saturation 1.15
 }
 
-include "dms/colors.kdl"
+
 
 
 
