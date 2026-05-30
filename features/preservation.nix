@@ -39,6 +39,21 @@
       
          ];
        };
+       users.webdev = {
+        directories = [
+           ".ssh"
+           ".config/google-chrome"
+	   ".config/obsidian"
+	   ".config/niri"
+	   ".local/state"
+	   "Pictures"
+	   "Documents"
+         ];
+      
+         files = [
+      
+         ];
+       }; 
     };
   };
 }
