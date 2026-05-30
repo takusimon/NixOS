@@ -4,7 +4,7 @@
    bash = {
      enable = true;
      shellAliases = {
-       ls = "ls -a";
+       ls = "ls -afH --color=always";
        emacs = "emacs -nw";
      };
      historySize = 10000;
@@ -24,6 +24,13 @@
 
      # Check the window size after each command and, if necessary, update the values of LINES and COLUMNS
      shopt -s checkwinsize
+
+     # set up XDG folders
+     export XDG_DATA_HOME="$HOME/.local/share"
+     export XDG_CONFIG_HOME="$HOME/.config"
+     export XDG_STATE_HOME="$HOME/.local/state"
+     export XDG_CACHE_HOME="$HOME/.cache"
+     
      '';
   };
  };

@@ -5,6 +5,11 @@
     Appearance = {
      color_scheme_path = "~/.config/qt5ct/colors/matugen.conf";
      custom_palette = "true";
+     icon_theme = "Papirus-Dark";
+    };
+    Fonts = {
+     fixed = "\"JetBrainsMono Nerd Font Propo, 12\"";
+     general = "JetBrainsMono Nerd Font Propo, 12\"";
     };
    };
 
@@ -12,12 +17,27 @@
    Appearance = {
      color_scheme_path = "~/.config/qt5ct/colors/matugen.conf";
      custom_palette = "true";
+     icon_theme = "Papirus-Dark";
    };
+   Fonts = {
+     fixed = "\"JetBrainsMono Nerd Font Propo, 12\"";
+     general = "JetBrainsMono Nerd Font Propo, 12\"";
+    };
  };
 };
 
 gtk = {
  enable = true;
+ font = {
+  name = "JetBrainsMono Nerd Font Propo";
+  size = 12;
+ };
+ iconTheme.name = "Papirus-Dark";
+ cursorTheme = {
+  name = "Bibata-Modern-Ice";
+  size = 24;
+ };
+ 
  gtk3.extraCss = "@import 'colors.css';";
  gtk4.extraCss = "@import 'colors.css';";
  };

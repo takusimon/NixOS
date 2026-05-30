@@ -22,6 +22,9 @@
 		    starship
 		    killall
 		    matugen
+		    papirus-icon-theme
+		    papirus-folders
+		    bibata-cursors
 		    ];
 
 		    shellAliases = {

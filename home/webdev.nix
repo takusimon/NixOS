@@ -7,13 +7,12 @@ imports = [
 	./common/gtk-qt.nix
 	./common/niri.nix
 	./common/matugen.nix
-	./common/fastfetch.nix
 	./common/dank.nix
 	./common/emacs.nix
 	];
 home = {
-  username = "taku";
-  homeDirectory = "/home/taku";
+  username = "webdev";
+  homeDirectory = "/home/webdev";
   stateVersion = "26.05";
   file = {
        ".config/matugen/colors".source = ./colors;
