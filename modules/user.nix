@@ -11,10 +11,6 @@ users.users = {
 		description = "Webdev thingz";
 		hashedPassword = "$y$j9T$SWIJmwXEA9izY9UwNwfAf/$0QUMfqeq3oigf8TRmuc6kzgIIa4mYJMju64Qaj/7zF6";
 		extraGroups = [ "wheel" ];
-		packages = with pkgs; [
-		 vscode
-		 nodejs_26
-		 ];
 	  };
 };
 }

@@ -17,5 +17,8 @@ home = {
   file = {
        ".config/matugen/colors".source = ./colors;
   };
+  packages = with pkgs; [
+   vscode
+  ];
  };
 }
