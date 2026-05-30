@@ -31,12 +31,7 @@ input {
     }
     mouse
 }
-blur {
-     passes 4
-     offset 3.5
-     noise 0.02
-     saturation 1.15
-}
+
 
 layout {
     gaps 10
