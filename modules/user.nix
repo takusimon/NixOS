@@ -19,7 +19,7 @@ users.users = {
 	  };
 	  htb = {
 	        isNormalUser = true;
-		decription = "PenTesting";
+		description = "PenTesting";
 		hashedPassword = "$y$j9T$C7qcKmMHxH5y7zo179HBU.$qMeJntlyqWlSFSESX4Xq3oLT7aUkclGIq5yZsrVbiL4";
 		extraGroups = [ "wheel" ];
 	 };

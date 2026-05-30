@@ -12,7 +12,7 @@ imports = [
 	];
 home = {
   username = "htb";
-  homeDirectory = "/home/webdev";
+  homeDirectory = "/home/htb";
   stateVersion = "26.05";
   file = {
        ".config/matugen/colors".source = ./colors;
