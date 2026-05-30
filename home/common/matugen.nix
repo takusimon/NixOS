@@ -37,6 +37,9 @@ output_path = '~/.config/qt5ct/colors/matugen.conf'
 input_path = '~/.config/matugen/colors/starship.toml'
 output_path = '~/.config/starship.toml'
 
+[templates.obsidian]
+input_path = '~/.config/matugen/colors/obsidian.css'
+output_path = '~/Documents/Notes/.obsidian/snippets/matugen.css'
 
 [templates.emacs]
 input_path = '~/.config/matugen/colors/colors.css'
