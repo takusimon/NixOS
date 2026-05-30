@@ -56,7 +56,23 @@
          files = [
       
          ];
-       }; 
+       };
+         users.htb= {
+         directories = [
+           ".ssh"
+           ".config/google-chrome"
+	   ".config/obsidian"
+	   ".config/niri"
+	   ".local"
+	   ".config/DankMaterialShell"
+	   "Pictures"
+	   "Documents"
+         ];
+      
+         files = [
+      
+         ];
+       };
     };
   };
 }
