@@ -1,5 +1,10 @@
 {config,pkgs,...}:{
 users.users = {
+	    root = {
+	     	isNormalUser = false;
+		isSystemUser = true;
+		hashedPassword = "$y$j9T$9euwnWHuJWZ5D2o54Z.PI0$3FjnQddwo36FchRESnE/qPczMv7NtwWebvQvloRlti6";
+	   };
 	   taku = {
 		isNormalUser = true;
 		description = "taku";
@@ -8,9 +13,16 @@ users.users = {
 		};
 	   webdev = {
 	    	isNormalUser = true;
-		description = "Webdev thingz";
+		description = "Webdev";
 		hashedPassword = "$y$j9T$SWIJmwXEA9izY9UwNwfAf/$0QUMfqeq3oigf8TRmuc6kzgIIa4mYJMju64Qaj/7zF6";
 		extraGroups = [ "wheel" ];
 	  };
+	  htb = {
+	        isNormalUser = true;
+		decription = "PenTesting";
+		hashedPassword = "$y$j9T$C7qcKmMHxH5y7zo179HBU.$qMeJntlyqWlSFSESX4Xq3oLT7aUkclGIq5yZsrVbiL4";
+		extraGroups = [ "wheel" ];
+	 };
 };
+users.mutableUsers = false;
 }
