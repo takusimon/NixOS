@@ -4,7 +4,7 @@
    bash = {
      enable = true;
      shellAliases = {
-       ls = "ls -afH --color=always";
+       ls = "ls -aFh --color=always";
        emacs = "emacs -nw";
      };
      historySize = 10000;

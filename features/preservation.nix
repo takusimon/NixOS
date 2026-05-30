@@ -30,7 +30,7 @@
            ".config/google-chrome"
 	   ".config/obsidian"
 	   ".config/niri"
-	   ".local/state"
+	   ".local"
 	   ".config/DankMaterialShell"
 	   "Pictures"
 	   "Documents"
@@ -47,7 +47,8 @@
 	   ".config/DankMaterialShell"
 	   ".config/obsidian"
 	   ".config/niri"
-	   ".local/state"
+	   ".config/Code"
+	   ".local"
 	   "Pictures"
 	   "Documents"
          ];
