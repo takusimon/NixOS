@@ -31,6 +31,7 @@
 	   ".config/obsidian"
 	   ".config/niri"
 	   ".local/state"
+	   ".config/DankMaterialShell"
 	   "Pictures"
 	   "Documents"
          ];
@@ -43,6 +44,7 @@
         directories = [
            ".ssh"
            ".config/google-chrome"
+	   ".config/DankMaterialShell"
 	   ".config/obsidian"
 	   ".config/niri"
 	   ".local/state"

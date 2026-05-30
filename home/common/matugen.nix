@@ -40,7 +40,7 @@ output_path = '~/.config/starship.toml'
 
 [templates.emacs]
 input_path = '~/.config/matugen/colors/colors.css'
-output_path = '~/.config/emacs/colors.css'
+output_path = '~/.emacs.d/colors.css'
 
 [templates.niri]
 input_path = '~/.config/matugen/colors/niri-colors.kdl'

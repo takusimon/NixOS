@@ -2,7 +2,10 @@
  home.file.".config/niri/config.kdl".text = ''
   include "colors.kdl"
   prefer-no-csd
-
+  cursor {
+   xcursor-theme "Bibata-Modern-Ice"
+   xcursor-size 24
+  }
   layer-rule {
     match namespace="^quickshell$"
     place-within-backdrop true
