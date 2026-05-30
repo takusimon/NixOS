@@ -6,5 +6,6 @@
     backupFileExtension = "bk";
     users.taku = import ../home/taku.nix;
     users.webdev = import ../home/webdev.nix;
+    users.htb = import ../home/htb.nix;
  };
 }
