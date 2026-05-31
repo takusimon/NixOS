@@ -78,7 +78,7 @@
 	   ".local"
 	   ".config/DankMaterialShell"
 	   "Pictures"
-	   "Documents"
+	   "Penetration-Testing"
          ];
       
          files = [

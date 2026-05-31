@@ -4,8 +4,9 @@
 add_newline = false
 
 format = """
-$cmd_duration $directory$git_branch$nix_shell
-  $character"""
+$time $cmd_duration $directory $git_branch $nix_shell
+
+ $username $character"""
 
 [fill]
 symbol = '-'
@@ -69,14 +70,14 @@ symbol = " "
 style = "bold fg:{{colors.primary.default.hex}}"
 
 [time]
-disabled = true
-format = '🕙[\[ $time \]]($style) '
-time_format = "%T"
+disabled = false
+format = '[](bold fg:{{colors.on_primary_container.default.hex}})[󰃭 $time](bold bg:{{colors.on_primary_container.default.hex}} fg:{{colors.background.default.hex}})[](bold fg:{{colors.on_primary_container.default.hex}})'
+time_format = "%Y-%m-%d %H:%M"
 
 [username]
 style_user = "bold bg:{{colors.secondary_container.default.hex}} fg:{{colors.on_secondary_container.default.hex}}"
 style_root = "bold fg:{{colors.error.default.hex}}"
-format = "[](bold fg:{{colors.secondary_container.default.hex}})[$user]($style)"
+format = '[](bold fg:{{colors.on_primary_container.default.hex}})[ $username](bold bg:{{colors.on_primary_container.default.hex}} fg:{{colors.background.default.hex}})[](bold fg:{{colors.on_primary_container.default.hex}})'
 disabled = false
 show_always = true
 

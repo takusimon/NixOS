@@ -4,6 +4,7 @@ users.users = {
 	     	isNormalUser = false;
 		isSystemUser = true;
 		hashedPassword = "$y$j9T$9euwnWHuJWZ5D2o54Z.PI0$3FjnQddwo36FchRESnE/qPczMv7NtwWebvQvloRlti6";
+		shell = pkgs.bash;
 	   };
 	   taku = {
 		isNormalUser = true;

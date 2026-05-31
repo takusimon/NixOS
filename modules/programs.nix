@@ -15,5 +15,11 @@
 	    enableClipboardPaste = true;
 	    quickshell.package = pkgs.quickshell;
 	};
+	bash = {
+	 enable = true;
+	 promptInit = ''
+	   eval "$(${pkgs.starship}/bin/starship init bash)"
+	 '';
+	};
      };
  }
