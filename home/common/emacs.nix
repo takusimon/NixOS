@@ -6,6 +6,8 @@
 
     extraConfig = ''
       (load-theme 'matugen t)
+      (setq make-backup-files nil)
+      (global-display-line-numbers-mode t)
     '';
   };
 
@@ -123,7 +125,7 @@
 
    `(line-number
       ((t (
-           :foreground ,outline-variant))))
+           :foreground ,on-primary))))
 
    `(line-number-current-line
       ((t (

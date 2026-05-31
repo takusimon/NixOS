@@ -12,7 +12,6 @@
 		    gnumake
 		    gcc
 		    ncdu
-		    btop
 		    emacs-pgtk
 		    clang
 		    google-chrome
