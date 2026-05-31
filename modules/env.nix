@@ -28,25 +28,23 @@
 		    shellAliases = {
 		    		 emacs = "emacs -nw";
 		    };
-		    variables = {
-		     STARSHIP_CONFIG = "/etc/starship-root.toml";
-		    };
 		    etc."starship-root.toml".text = ''
-		    # Starship + Matugen template
-# Adjusted ONLY to better match the kitty palette
+		    # Starship + Root Theme
+# Red-accented root prompt
 
 add_newline = false
 
 format = """
 $time $cmd_duration $directory $git_branch $nix_shell
- $username $character"""
+
+$username $character"""
 
 [fill]
 symbol = '-'
-style = 'fg:#8e9199'
+style = 'fg:#9c8e80'
 
 [character]
-success_symbol = "[ ](bold fg:#a8c8ff)"
+success_symbol = "[ ](bold fg:#f6bc70)"
 error_symbol = "[ ](bold fg:#ffb4ab)"
 
 [package]
@@ -56,7 +54,7 @@ disabled = true
 symbol = "󰘬"
 truncation_length = 12
 truncation_symbol = ""
-format = " [](bold fg:#3d4758)[$symbol $branch(:$remote_branch)](bold fg:#d9e3f8 bg:#3d4758)[ ](bold fg:#3d4758)"
+format = " [](bold fg:#57432b)[$symbol $branch(:$remote_branch)](bold fg:#fbdebc bg:#57432b)[ ](bold fg:#57432b)"
 
 [git_commit]
 commit_hash_length = 4
@@ -74,7 +72,7 @@ diverged = " 😵 "
 untracked = " 🤷 "
 stashed = " 📦 "
 modified = " 📝 "
-staged = '[++\($count\)](bold fg:#a8c8ff)'
+staged = '[++\($count\)](bold fg:#f6bc70)'
 renamed = " ✍️ "
 deleted = " 🗑 "
 
@@ -85,11 +83,11 @@ impure_msg = "impure"
 pure_msg = "pure"
 unknown_msg = "shell"
 
-format = ' [](bold fg:#254777)[$symbol $state( \($name\))](bold bg:#254777 fg:#d5e3ff)[](bold fg:#254777)'
+format = ' [](bold fg:#643f00)[$symbol $state( \($name\))](bold bg:#643f00 fg:#ffddb5)[](bold fg:#643f00)'
 
 [hostname]
 ssh_only = false
-format = "[•$hostname](bold bg:#3d4758 fg:#d9e3f8)[](bold fg:#3d4758)"
+format = "[•$hostname](bold bg:#57432b fg:#fbdebc)[](bold fg:#57432b)"
 trim_at = ".companyname.com"
 disabled = false
 
@@ -100,27 +98,25 @@ disabled = false
 disabled = true
 threshold = -1
 symbol = " "
-style = "bold fg:#a8c8ff"
+style = "bold fg:#f6bc70"
 
 [time]
 disabled = false
-format = '[](bold fg:#d5e3ff)[󰃭 $time](bold bg:#d5e3ff fg:#111318)[](bold fg:#d5e3ff)'
+format = '[](bold fg:#ffddb5)[󰃭 $time](bold bg:#ffddb5 fg:#18120b)[](bold fg:#ffddb5)'
 time_format = "%Y-%m-%d %H:%M"
 
 [username]
-style_user = "bold bg:#3d4758 fg:#d9e3f8"
-style_root = "bold fg:#ffb4ab"
-format = "[](bold fg:#3d4758)[$user]($style)"
 disabled = false
 show_always = true
+format = '[](bold fg:#8c1d18)[ $user](bold bg:#8c1d18 fg:#ffdad6)[](bold fg:#8c1d18)'
 
 [directory]
 home_symbol = " "
 read_only = "  "
-style = "bold bg:#1d2024 fg:#e1e2e9"
+style = "bold bg:#251f17 fg:#ede0d4"
 truncation_length = 2
 truncation_symbol = ".../"
-format = '[](bold fg:#1d2024)[󰉋 → $path]($style)[](bold fg:#1d2024)'
+format = '[](bold fg:#251f17)[󰉋 → $path]($style)[](bold fg:#251f17)'
 
 [directory.substitutions]
 "Desktop" = "  "
@@ -133,7 +129,7 @@ format = '[](bold fg:#1d2024)[󰉋 → $path]($style)[](bold fg:#1d2024)'
 
 [cmd_duration]
 min_time = 0
-format = '[](bold fg:#254777)[󰪢 $duration](bold bg:#254777 fg:#d5e3ff)[](bold fg:#254777)'
+format = '[](bold fg:#643f00)[󰪢 $duration](bold bg:#643f00 fg:#ffddb5)[](bold fg:#643f00)'
 '';
     
 	};
