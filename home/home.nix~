@@ -1,7 +1,0 @@
-{config,pkgs,...}:{
- home = {
-  username = "taku";
-  homeDirectory = "/home/taku";
-  stateVersion = "26.05";
-};
-}
