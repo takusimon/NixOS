@@ -72,18 +72,50 @@ set -g window-style \
 set -g window-active-style \
     "bg=default,fg=#{@thm_fg}"
 
-##### STATUS BAR #####
+set-option -g status-justify left
 
-set -g status-style \
-    "bg=default,fg=#{@thm_fg}"
+set-option -g status-style \
+"bg=#{@thm_surface},fg=#d8dee9"
 
-##### WINDOWS #####
+set-option -g status-left \
+'#[bg=#{@thm_primary}] \
+#[bg=#3b4252] \
+#[bg=#2e3440] \
+#[bg=#1f2430]#[fg=#eceff4,bold] #S \
+#[bg=#2e3440] '
 
-set -g window-status-style \
-    "bg=default,fg=#{@thm_fg}"
+set-option -g status-left-length 16
 
-set -g window-status-current-style \
-    "bg=default,fg=#{@thm_primary},bold"
+set-option -g status-right \
+'#[bg=#2e3440] \
+#[bg=#1f2430]#[fg=#eceff4,bold] %a %R \
+#[bg=#2e3440]#[fg=#{@thm_primary}] \
+#[bg=#3b4252] \
+#[bg=#{@thm_primary}] #[]'
+
+set-option -g status-interval 60
+
+set-option -g pane-active-border-style \
+"fg=#{@thm_primary}"
+
+set-option -g pane-border-style \
+"fg=#4c566a"
+
+set-window-option -g window-status-format \
+'#[bg=#3b4252]#[fg=#d8dee9,bold] #I \
+#[bg=#2e3440]#[fg=#e5e9f0] \
+#[bg=#1f2430]#[fg=#eceff4] #W\
+#[bg=#2e3440]#[fg=#{@thm_primary}]#F\
+#[bg=#3b4252] '
+
+set-window-option -g window-status-current-format \
+'#[bg=#{@thm_primary_container}]#[fg=#{@thm_on_primary_container},bold] #I \
+#[bg=#{@thm_primary}]#[fg=#{@thm_on_primary},bold] \
+#[bg=#1f2430]#[fg=#ffffff,bold] #W\
+#[bg=#{@thm_primary}]#[fg=#{@thm_on_primary}]#F\
+#[bg=#{@thm_primary_container}] '
+
+
 
 ##### PANES #####
 
