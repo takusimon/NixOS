@@ -125,7 +125,7 @@
 
    `(line-number
       ((t (
-           :foreground ,on-primary))))
+           :foreground ,primary))))
 
    `(line-number-current-line
       ((t (

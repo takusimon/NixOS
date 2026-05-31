@@ -68,7 +68,7 @@
          users.htb= {
          directories = [
            ".ssh"
-           ".config/google-chrome"
+           ".config/mozilla"
 	   ".config/obsidian"
 	   ".config/niri"
 	   ".config/gtk-3.0"

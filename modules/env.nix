@@ -14,7 +14,6 @@
 		    ncdu
 		    emacs-pgtk
 		    clang
-		    google-chrome
 		    obsidian
 		    imagemagick
 		    yazi

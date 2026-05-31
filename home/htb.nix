@@ -18,7 +18,7 @@ home = {
        ".config/matugen/colors".source = ./colors;
   };
   packages = with pkgs; [
-   
+   firefox
   ];
  };
 }

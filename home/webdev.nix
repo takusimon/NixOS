@@ -19,6 +19,7 @@ home = {
   };
   packages = with pkgs; [
    vscode
+   google-chrome
   ];
  };
 }

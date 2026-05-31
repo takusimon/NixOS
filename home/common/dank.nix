@@ -280,7 +280,7 @@ home.file.".config/DankMaterialShell/settings.json".text = ''
   "matugenTemplateMangowc": false,
   "matugenTemplateQt5ct": false,
   "matugenTemplateQt6ct": false,
-  "matugenTemplateFirefox": false,
+  "matugenTemplateFirefox": true,
   "matugenTemplatePywalfox": false,
   "matugenTemplateZenBrowser": false,
   "matugenTemplateVesktop": false,
