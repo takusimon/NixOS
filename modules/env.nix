@@ -29,9 +29,6 @@
 		    		 emacs = "emacs -nw";
 		    };
 		    etc."starship-root.toml".text = ''
-		    # Starship + Root Theme
-# Red-accented root prompt
-
 add_newline = false
 
 format = """
@@ -41,11 +38,11 @@ $username $character"""
 
 [fill]
 symbol = '-'
-style = 'fg:#9c8e80'
+style = 'fg:#7d5a58'
 
 [character]
-success_symbol = "[ ](bold fg:#f6bc70)"
-error_symbol = "[ ](bold fg:#ffb4ab)"
+success_symbol = "[ ](bold fg:#ffb4ab)"
+error_symbol = "[ ](bold fg:#ff6b6b)"
 
 [package]
 disabled = true
@@ -54,7 +51,7 @@ disabled = true
 symbol = "󰘬"
 truncation_length = 12
 truncation_symbol = ""
-format = " [](bold fg:#57432b)[$symbol $branch(:$remote_branch)](bold fg:#fbdebc bg:#57432b)[ ](bold fg:#57432b)"
+format = " [](bold fg:#5b1d1d)[$symbol $branch(:$remote_branch)](bold fg:#ffdad6 bg:#5b1d1d)[ ](bold fg:#5b1d1d)"
 
 [git_commit]
 commit_hash_length = 4
@@ -72,7 +69,7 @@ diverged = " 😵 "
 untracked = " 🤷 "
 stashed = " 📦 "
 modified = " 📝 "
-staged = '[++\($count\)](bold fg:#f6bc70)'
+staged = '[++\($count\)](bold fg:#ffb4ab)'
 renamed = " ✍️ "
 deleted = " 🗑 "
 
@@ -83,11 +80,11 @@ impure_msg = "impure"
 pure_msg = "pure"
 unknown_msg = "shell"
 
-format = ' [](bold fg:#643f00)[$symbol $state( \($name\))](bold bg:#643f00 fg:#ffddb5)[](bold fg:#643f00)'
+format = ' [](bold fg:#7a2e2e)[$symbol $state( \($name\))](bold bg:#7a2e2e fg:#ffdad6)[](bold fg:#7a2e2e)'
 
 [hostname]
 ssh_only = false
-format = "[•$hostname](bold bg:#57432b fg:#fbdebc)[](bold fg:#57432b)"
+format = "[](bold fg:#5b1d1d)[•$hostname](bold bg:#5b1d1d fg:#ffdad6)[](bold fg:#5b1d1d)"
 trim_at = ".companyname.com"
 disabled = false
 
@@ -98,25 +95,25 @@ disabled = false
 disabled = true
 threshold = -1
 symbol = " "
-style = "bold fg:#f6bc70"
+style = "bold fg:#ffb4ab"
 
 [time]
 disabled = false
-format = '[](bold fg:#ffddb5)[󰃭 $time](bold bg:#ffddb5 fg:#18120b)[](bold fg:#ffddb5)'
 time_format = "%Y-%m-%d %H:%M"
+format = '[](bold fg:#8c1d18)[󰃭 $time](bold bg:#8c1d18 fg:#ffdad6)[](bold fg:#8c1d18)'
 
 [username]
 disabled = false
 show_always = true
-format = '[](bold fg:#8c1d18)[ $user](bold bg:#8c1d18 fg:#ffdad6)[](bold fg:#8c1d18)'
+format = '[](bold fg:#a12b2b)[ $user](bold bg:#a12b2b fg:#ffdad6)[](bold fg:#a12b2b)'
 
 [directory]
 home_symbol = " "
 read_only = "  "
-style = "bold bg:#251f17 fg:#ede0d4"
+style = "bold bg:#2b1616 fg:#f2dede"
 truncation_length = 2
 truncation_symbol = ".../"
-format = '[](bold fg:#251f17)[󰉋 → $path]($style)[](bold fg:#251f17)'
+format = '[](bold fg:#2b1616)[󰉋 → $path]($style)[](bold fg:#2b1616)'
 
 [directory.substitutions]
 "Desktop" = "  "
@@ -129,7 +126,7 @@ format = '[](bold fg:#251f17)[󰉋 → $path]($style)[](bold fg:#251f17)'
 
 [cmd_duration]
 min_time = 0
-format = '[](bold fg:#643f00)[󰪢 $duration](bold bg:#643f00 fg:#ffddb5)[](bold fg:#643f00)'
+format = '[](bold fg:#7a2e2e)[󰪢 $duration](bold bg:#7a2e2e fg:#ffdad6)[](bold fg:#7a2e2e)'
 '';
     
 	};
