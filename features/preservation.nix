@@ -44,47 +44,7 @@
       
          ];
        };
-       users.webdev = {
-        directories = [
-           ".ssh"
-           ".config/google-chrome"
-	   ".config/DankMaterialShell"
-	   ".config/obsidian"
-	   ".config/niri"
-	   ".config/Code"
-	   ".config/gtk-3.0"
-	   ".config/gtk-4.0"
-	   ".config/qt6ct"
-	   ".config/qt5ct"
-	   ".local"
-	   "Pictures"
-	   "Documents"
-         ];
-      
-         files = [
-      
-         ];
-       };
-         users.htb= {
-         directories = [
-           ".ssh"
-           ".config/mozilla"
-	   ".config/obsidian"
-	   ".config/niri"
-	   ".config/gtk-3.0"
-	   ".config/gtk-4.0"
-	   ".config/qt6ct"
-	   ".config/qt5ct"
-	   ".local"
-	   ".config/DankMaterialShell"
-	   "Pictures"
-	   "Penetration-Testing"
-         ];
-      
-         files = [
-      
-         ];
-       };
+
     };
   };
 }

@@ -23,13 +23,14 @@
 		    papirus-icon-theme
 		    papirus-folders
 		    bibata-cursors
+		    devenv
 		    ];
 
 		    shellAliases = {
 		    		 emacs = "emacs -nw";
 		    };
 		    etc."starship-root.toml".text = ''
-add_newline = false
+add_newline = true
 
 format = """
 $time $cmd_duration $directory $git_branch $nix_shell

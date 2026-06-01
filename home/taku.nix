@@ -20,6 +20,10 @@ home = {
   };
     packages = with pkgs; [
      google-chrome
+     firefox
+     tree
+     vscode
+
   ];
  };
 }
