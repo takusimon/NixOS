@@ -14,6 +14,7 @@ imports =
       ./modules/host.nix
       ./modules/programs.nix
       ./modules/home-manager.nix
+      ./modules/virtualisation.nix
 ];
 }
 
