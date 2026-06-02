@@ -23,7 +23,10 @@ home = {
      firefox
      tree
      vscode
-
+     nwg-look
+     kdePackages.qt6ct
+     nautilus
+     quickshell
   ];
  };
 }

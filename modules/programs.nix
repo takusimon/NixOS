@@ -25,5 +25,6 @@
 	   eval "$(${pkgs.starship}/bin/starship init bash)"
 	 '';
 	};
+	xwayland.enable = true;
      };
  }

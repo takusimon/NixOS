@@ -1,5 +1,6 @@
 {config,pkgs,...}:{
-users.users = {
+users = {
+  users = {
 	    root = {
 	     	isNormalUser = false;
 		isSystemUser = true;
@@ -13,5 +14,9 @@ users.users = {
 		extraGroups = [ "wheel" "networkmanagr" ];
 		};
 };
-users.mutableUsers = false;
+ mutableUsers = false;
+ extraGroups = {
+  vboxusers.members = [ "taku" ];
+ };
+};
 }

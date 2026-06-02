@@ -1,6 +1,6 @@
 {config,pkgs,...}:
 {
-  virtualsation.virtualbox = {
+  virtualisation.virtualbox = {
     host = {
      enable = true;
     };

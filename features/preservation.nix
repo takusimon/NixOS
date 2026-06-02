@@ -34,6 +34,8 @@
 	   ".config/gtk-4.0"
 	   ".config/qt6ct"
 	   ".config/qt5ct"
+	   ".config/Code"
+	   ".config/mozzila"
 	   ".local"
 	   ".config/DankMaterialShell"
 	   "Pictures"
