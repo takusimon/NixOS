@@ -5,7 +5,10 @@
 
     preserveAt."/persistent" = {
       directories = [
-        "/etc/nixos"
+        {
+	 directory = "/etc";
+	 inInitrd = true;
+	}
         "/var/log"
 	"/var/lib/bluetooth"
 	"/etc/NetworkManager/system-connections"
@@ -17,10 +20,6 @@
       ];
 
       files = [
-        {
-          file = "/etc/machine-id";
-          inInitrd = true;
-        }
       ];
 
       # Preserve user files

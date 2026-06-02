@@ -23,6 +23,7 @@
 		    papirus-folders
 		    bibata-cursors
 		    devenv
+		    xwayland-satellite
 		    ];
 
 		    shellAliases = {

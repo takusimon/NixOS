@@ -12,6 +12,11 @@
   }
   environment {
     XDG_CURRENT_DESKTOP "niri"
+    GDK_BACKEND "wayland,x11"
+    SDL_VIDEODRIVER "wayland"
+    CLUTTER_BACKEND "wayland"
+    XDG_SESSION_TYPE "wayland"
+    XDG_SESSION_DESKTOP "niri"
     QT_QPA_PLATFORM "wayland"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     QT_QPA_PLATFORMTHEME "gtk3"
