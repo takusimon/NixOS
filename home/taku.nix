@@ -20,13 +20,20 @@ home = {
   };
     packages = with pkgs; [
      google-chrome
-     firefox
      tree
      vscode
      nwg-look
      kdePackages.qt6ct
      nautilus
      quickshell
+     adw-gtk3
+     kdePackages.okular
+     nautilus
+     discord
+     steam
+     kdePackages.qt6ct
+     nwg-look
+     
   ];
  };
 }

@@ -13,7 +13,6 @@
 		    gcc
 		    ncdu
 		    emacs-pgtk
-		    clang
 		    obsidian
 		    imagemagick
 		    yazi
