@@ -33,7 +33,7 @@ home = {
      steam
      kdePackages.qt6ct
      nwg-look
-     
+     firefox     
   ];
  };
 }

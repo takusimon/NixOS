@@ -15,16 +15,6 @@
 	    enableClipboardPaste = true;
 	    quickshell.package = pkgs.quickshell;
 	};
-	bash = {
-	 enable = true;
-	 promptInit = ''
-	  if [ "$USER" = root ]; then
-	   export STARSHIP_CONFIG=/etc/starship-root.toml
-	  fi
-	  
-	   eval "$(${pkgs.starship}/bin/starship init bash)"
-	 '';
-	};
 	xwayland.enable = true;
      };
  }

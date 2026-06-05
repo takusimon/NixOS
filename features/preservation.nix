@@ -35,6 +35,8 @@
 	   ".config/qt5ct"
 	   ".config/Code"
 	   ".config/mozzila"
+	   ".config/disocrd"
+	   ".config/VirtualBox"
 	   ".local"
 	   ".config/DankMaterialShell"
 	   "Pictures"

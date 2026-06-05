@@ -6,6 +6,9 @@
      shellAliases = {
        ls = "ls -aFh";
        emacs = "emacs -nw";
+       nedit = "sudo emacs /etc/nixos/";
+       nbs = "sudo nixos-rebuild switch";
+       nbb = "sudo nixos-rebuild boot";
      };
      historySize = 10000;
      bashrcExtra = ''

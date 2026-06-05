@@ -1,7 +1,6 @@
 {config,pkgs,...}: {
     #Set system services sound, desktop manager, etc
     services = {
-    	    desktopManager.gnome.enable = true;
     	    displayManager = {
 	    ly.enable = false;
 	    dms-greeter = {
