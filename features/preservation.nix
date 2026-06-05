@@ -39,7 +39,7 @@
 	   ".config/VirtualBox"
 	   ".local"
 	   ".config/DankMaterialShell"
-	   "Pictures"
+	   "Pictures/wallpaper"
 	   "Documents"
          ];
       
