@@ -7,7 +7,7 @@ home.file.".config/DankMaterialShell/settings.json".text = ''
   "registryThemeVariants": {
     "gruvboxMaterial": "medium"
   },
-  "matugenScheme": "scheme-vibrant",
+  "matugenScheme": "scheme-content",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
@@ -581,6 +581,5 @@ home.file.".config/DankMaterialShell/settings.json".text = ''
   "launcherPluginOrder": [],
   "configVersion": 5
 }
-
 '';
 }

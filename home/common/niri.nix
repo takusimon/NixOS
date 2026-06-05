@@ -45,7 +45,7 @@ layout {
 }
 
   window-rule {
-        opacity 0.85
+        opacity 0.7
 
          draw-border-with-background false
 
@@ -73,7 +73,7 @@ layout {
         tiled-state true
 
         background-effect {
-                blur true
+                blur false
                 saturation 0
                 xray true
         }
