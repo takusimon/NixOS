@@ -5,7 +5,9 @@ imports = [
   ./dots/git.nix
   ./dots/gtk-qt.nix
   ./dots/tmux.nix
-  ./dots/kitty.nix  
+  ./dots/kitty.nix
+  ./dots/starship.nix
+  ./dots/fastfetch.nix
 	];
 home = {
   username = "taku";
