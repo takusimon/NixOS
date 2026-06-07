@@ -8,6 +8,7 @@ imports = [
   ./dots/kitty.nix
   ./dots/starship.nix
   ./dots/fastfetch.nix
+  ./dots/niri.nix
 	];
 home = {
   username = "taku";
