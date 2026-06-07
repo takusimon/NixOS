@@ -7,7 +7,7 @@ programs.kitty = {
   };
   extraConfig = ''
     # BEGIN_KITTY_THEME
-    # Matugen
+    # Noctalia
     include current-theme.conf
     # END_KITTY_THEME
     

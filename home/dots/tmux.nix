@@ -60,51 +60,8 @@ bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel
 
 unbind -T copy-mode-vi MouseDragEnd1Pane
 
+set-option -g status-style bg=default
 
-# Matugen colors
-source-file ~/.config/tmux/colors.conf
-##### WINDOW BACKGROUNDS #####
-
-set -g window-style \
-    "bg=default,fg=#{@thm_fg}"
-
-set -g window-active-style \
-    "bg=default,fg=#{@thm_fg}"
-
-##### STATUS BAR #####
-
-set -g status-style \
-    "bg=default,fg=#{@thm_fg}"
-
-##### WINDOWS #####
-
-set -g window-status-style \
-    "bg=default,fg=#{@thm_fg}"
-
-set -g window-status-current-style \
-    "bg=default,fg=#{@thm_primary},bold"
-
-##### PANES #####
-
-set -g pane-border-style \
-    "fg=#{@thm_surface_container}"
-
-set -g pane-active-border-style \
-    "fg=#{@thm_primary}"
-
-##### MESSAGES #####
-
-set -g message-style \
-    "bg=default,fg=#{@thm_primary}"
-
-set -g message-command-style \
-    "bg=default,fg=#{@thm_primary}"
-
-##### MODES #####
-
-set -g mode-style \
-    "bg=default,fg=#{@thm_primary}"
-
-   '';
- };
+'';
+};
 }

@@ -25,13 +25,8 @@ home = {
      discord
      steam
      kdePackages.qt6ct
-     starship
-     papirus-icon-theme
-     bibata-cursors
-     firefox
-     obsidian
-     yazi
-     imagemagick
+     nwg-look
+     firefox     
   ];
  };
 }

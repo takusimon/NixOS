@@ -1,9 +1,0 @@
-{
-  "dankBatteryAlerts": {
-    "enabled": true
-  },
-  "dankPomodoroTimer": {
-    "enabled": true,
-    "autoSetDND": true
-  }
-}

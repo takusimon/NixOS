@@ -6,9 +6,6 @@
 	      enable = true;
 	      wayland.enable = true;
 	      theme = "sddm-astronaut-theme";
-	      extraPackages = with pkgs; [
-	      kdePackages.qtmultimedia
-	      ];
 	     };
 	    };
 	    printing.enable = false;
