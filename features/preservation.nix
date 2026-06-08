@@ -12,7 +12,6 @@
         "/var/log"
 	"/var/lib/bluetooth"
 	"/etc/NetworkManager/system-connections"
-	"/root"
         {
           directory = "/var/lib/nixos";
           inInitrd = true;
@@ -38,9 +37,9 @@
 	   ".config/disocrd"
 	   ".config/VirtualBox"
 	   ".local"
-	   ".config/DankMaterialShell"
-	   "Pictures"
+	   ".config/noctalia"
 	   "Documents"
+	   "NixOS"
          ];
       
          files = [
