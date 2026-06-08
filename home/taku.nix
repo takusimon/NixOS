@@ -36,6 +36,7 @@ home = {
      obsidian
      yazi
      imagemagick
+     kdePackages.breeze
   ];
  };
 }

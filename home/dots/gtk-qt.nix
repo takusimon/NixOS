@@ -3,6 +3,7 @@
    enable = true;
    qt5ctSettings = {
     Appearance = {
+    style = "Breeze";
      color_scheme_path = "~/.config/qt5ct/colors/noctalia.conf";
      custom_palette = "true";
      icon_theme = "Papirus-Dark";
@@ -15,6 +16,7 @@
 
   qt6ctSettings = {
    Appearance = {
+     style = "Breeze";
      color_scheme_path = "~/.config/qt6ct/colors/noctalia.conf";
      custom_palette = "true";
      icon_theme = "Papirus-Dark";
@@ -37,7 +39,7 @@ gtk = {
   name = "Bibata-Modern-Ice";
   size = 24;
  };
- theme.name = "Adwaita";
+ theme.name = "adw-gtk3-dark";
  colorScheme = "dark";
  
  gtk3.extraCss = "@import 'noctalia.css';";

@@ -6,9 +6,8 @@
      shellAliases = {
        ls = "ls -aFh";
        emacs = "emacs -nw";
-       nedit = "sudo emacs /etc/nixos/";
-       nbs = "sudo nixos-rebuild switch";
-       nbb = "sudo nixos-rebuild boot";
+       nbs = "sudo nixos-rebuild switch --flake /home/taku/NixOS/#kernelpanic";
+       nbb = "sudo nixos-rebuild boot --flake /home/taku/NixOS/#kernelpanic";
      };
      historySize = 10000;
      bashrcExtra = ''
