@@ -1,6 +1,6 @@
 {config,pkgs,...}:{
  home.file.".config/niri/config.kdl".text = ''
-spawn-at-startup "noctalia-shell"
+spawn-at-startup "noctalia"
 prefer-no-csd
   cursor {
    xcursor-theme "Bibata-Modern-Ice"
@@ -88,6 +88,18 @@ layout {
         }
 
      }
+     // Floating Noctalia settings window.
+window-rule {
+  match app-id="dev.noctalia.Noctalia.Settings"
+  open-floating true
+  default-column-width { fixed 1080; }
+  default-window-height { fixed 920; }
+}
+
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
      window-rule {
 	match app-id="google-chrome" title="YouTube"
 
@@ -107,21 +119,23 @@ binds {
 	Mod+Return repeat=false hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
      Print {screenshot; }
 
-     // Core Noctalia binds
-    Mod+Space { spawn-sh "noctalia-shell ipc call launcher toggle"; }
-    Mod+S { spawn-sh "noctalia-shell ipc call controlCenter toggle"; }
-    Mod+Shift+Comma { spawn-sh "noctalia-shell ipc call settings toggle"; }
-    Mod+Escape {spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock";}
-    Mod+M {spawn "noctalia-shell" "ipc" "call" "systemMonitor" "toggle";}
-    Mod+V {spawn "noctalia-shell" "ipc" "call" "launcher" "clipboard";}
-    Mod+N {spawn "noctalia-shell" "ipc" "call" "notifications" "toggleHistory";}
-    Mod+Y {spawn "noctalia-shell" "ipc" "call" "wallpaper" "toggle";}
+      // Core Noctalia binds
+    Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+S { spawn-sh "noctalia msg panel-toggle control-center"; }
+    Mod+Shift+Comma { spawn-sh "noctalia msg settings-toggle"; }
+    Mod+V {spawn-sh "noctalia msg panel-toggle clipboard";}
+    Mod+Y {spawn-sh "noctalia msg panel-toggle wallpaper";}
+    Mod+Escape {spawn-sh "noctalia msg session lock-and-suspend";}
+    Mod+End {spawn-sh "noctalia msg session shutdown";}
+    Mod+Home {spawn-sh "noctalis msg session reboot";}
+    
+
     // Audio & Brightness
-    XF86AudioRaiseVolume { spawn "noctalia-shell" "ipc" "call" "volume" "increase"; }
-    XF86AudioLowerVolume { spawn "noctalia-shell" "ipc" "call" "volume" "decrease"; }
-    XF86AudioMute { spawn "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
-    XF86MonBrightnessUp { spawn "noctalia-shell" "ipc" "call" "brightness" "increase"; }
-    XF86MonBrightnessDown { spawn "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
+    XF86AudioRaiseVolume { spawn-sh "noctalia msg volume-up"; }
+    XF86AudioLowerVolume { spawn-sh "noctalia msg volume-down"; }
+    XF86AudioMute { spawn-sh "noctalia msg volume-mute"; }
+    XF86MonBrightnessUp { spawn-sh "noctalia msg brightness-up"; }
+    XF86MonBrightnessDown { spawn-sh "noctalia msg brightness-down"; }
 
      // === Window Management ===
     Mod+Q repeat=false { close-window; }
