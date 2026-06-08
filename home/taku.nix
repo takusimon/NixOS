@@ -9,6 +9,7 @@ imports = [
   ./dots/starship.nix
   ./dots/fastfetch.nix
   ./dots/niri.nix
+  ./dots/noctalia.nix
 	];
 home = {
   username = "taku";
