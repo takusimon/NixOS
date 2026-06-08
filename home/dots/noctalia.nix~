@@ -171,20 +171,20 @@ settings = {
         }
       ];
       right = [
-       {
-          blacklist = [];
-          chevronColor = "none";
-          colorizeIcons = false;
-          drawerEnabled = false;
-          hidePassive = false;
-          id = "Tray";
-          pinned = [];
-        }
-	{
+        {
           displayMode = "onhover";
           iconColor = "none";
           id = "Network";
           textColor = "none";
+        }
+        {
+          blacklist = [];
+          chevronColor = "none";
+          colorizeIcons = false;
+          drawerEnabled = true;
+          hidePassive = false;
+          id = "Tray";
+          pinned = [];
         }
         {
           hideWhenZero = false;
@@ -196,7 +196,7 @@ settings = {
         }
         {
           deviceNativePath = "__default__";
-          displayMode = "graphic";
+          displayMode = "graphic-clean";
           hideIfIdle = false;
           hideIfNotDetected = true;
           id = "Battery";
@@ -222,10 +222,10 @@ settings = {
           colorizeSystemIcon = "none";
           colorizeSystemText = "none";
           customIconPath = "";
-          enableColorization = true;
+          enableColorization = false;
           icon = "noctalia";
           id = "ControlCenter";
-          useDistroLogo = true;
+          useDistroLogo = false;
         }
       ];
     };
@@ -421,7 +421,7 @@ settings = {
     shadowDirection = "bottom_right";
     shadowOffsetX = 2;
     shadowOffsetY = 3;
-    showChangelogOnStartup = false;
+    showChangelogOnStartup = true;
     showHibernateOnLockScreen = false;
     showScreenCorners = false;
     showSessionButtonsOnLockScreen = true;
@@ -456,16 +456,18 @@ settings = {
   };
   location = {
     analogClockInCalendar = false;
-    autoLocate = true;
-    firstDayOfWeek = -1;
-    WeatherCityName = false;
+    autoLocate = false;
+    firstDayOfWeek = "unknown character to parse: -";
+    ",
+        " = "unknown character to parse: h";
+    deWeatherCityName = false;
     hideWeatherTimezone = false;
     name = "";
     showCalendarEvents = true;
     showCalendarWeather = true;
-    showWeekNumberInCalendar = true;
+    showWeekNumberInCalendar = false;
     use12hourFormat = false;
-    useFahrenheit = true;
+    useFahrenheit = false;
     weatherEnabled = true;
     weatherShowEffects = true;
     weatherTaliaMascotAlways = false;

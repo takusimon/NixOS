@@ -32,10 +32,6 @@ input {
     mouse
 }
 
-hotkey-overlay {
- skip-at-startup
- hide-not-bound
-}
 
 layout {
     gaps 10
@@ -245,6 +241,6 @@ binds {
     Mod+Shift+Minus { set-window-height "-1%"; }
     Mod+Shift+Equal { set-window-height "+1%"; }
 }
-include "./noctalia.kdl"
+//include "./noctalia.kdl"
 '';
 }

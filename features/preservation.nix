@@ -40,6 +40,7 @@
 	   ".config/noctalia"
 	   "Documents"
 	   "NixOS"
+	   ".emacs.d"
          ];
       
          files = [

@@ -37,6 +37,8 @@ gtk = {
   name = "Bibata-Modern-Ice";
   size = 24;
  };
+ theme.name = "Adwaita";
+ colorScheme = "dark";
  
  gtk3.extraCss = "@import 'noctalia.css';";
  gtk4.extraCss = "@import 'noctalia.css';";
