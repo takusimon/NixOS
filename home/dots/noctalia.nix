@@ -312,6 +312,7 @@
 	};
 	dock = {
 		animationSpeed = 1;
+		icon_size = 40;
 		backgroundOpacity = 1;
 		background_opacity = 0.0;
 		colorizeIcons = false;
@@ -339,7 +340,7 @@
 		pinned = [ "discord" "google-chrome" "kitty" "obsidian" "code" "org.gnome.Nautilus" ];
 		pinnedApps = [ "google-chrome" "kitty" ];
 		pinnedStatic = true;
-		position = "bottom";
+		position = "left";
 		radius = 10;
 		showDockIndicator = false;
 		showLauncherIcon = false;

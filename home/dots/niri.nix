@@ -126,8 +126,8 @@ binds {
     Mod+V {spawn-sh "noctalia msg panel-toggle clipboard";}
     Mod+Y {spawn-sh "noctalia msg panel-toggle wallpaper";}
     Mod+Escape {spawn-sh "noctalia msg session lock-and-suspend";}
-    Mod+End {spawn-sh "noctalia msg session shutdown";}
-    Mod+Home {spawn-sh "noctalis msg session reboot";}
+    Mod+bracketleft {spawn-sh "noctalia msg session shutdown";}
+    Mod+bracketright {spawn-sh "noctalia msg session reboot";}
     
 
     // Audio & Brightness
