@@ -8,6 +8,7 @@
        emacs = "emacs -nw";
        nbs = "sudo nixos-rebuild switch --flake /home/taku/NixOS/#kernelpanic";
        nbb = "sudo nixos-rebuild boot --flake /home/taku/NixOS/#kernelpanic";
+       nbt = "sudo nixos-rebuild test --flake /home/taku/NixOS/#kernelpanic";
      };
      historySize = 10000;
      bashrcExtra = ''

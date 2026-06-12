@@ -22,6 +22,11 @@ prefer-no-csd
     QT_QPA_PLATFORMTHEME "qt6ct"
     QT_QPA_PLATFORMTHEME_QT6 "qt6ct"
   }
+ blur {
+     on
+     passes 2
+     offset 5.0
+ }
 
 input {
     keyboard
@@ -71,10 +76,13 @@ layout {
         clip-to-geometry true
         tiled-state true
 
+
+	
         background-effect {
-                blur false
+	        blur true
                 saturation 0
                 xray true
+
         }
 
 	 popups {
