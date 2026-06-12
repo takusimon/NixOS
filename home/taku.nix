@@ -38,6 +38,7 @@ home = {
      kdePackages.breeze
      foliate
      btop
+     cider-2
   ];
  };
 }

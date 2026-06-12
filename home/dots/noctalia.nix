@@ -82,7 +82,7 @@
 			capsule = true;
 			center = [ "ram" "date" "cpu" ];
 			end = [ "tray" "notifications" "clipboard" "network" "bluetooth" "volume" "brightness" "battery" "control-center" "session" ];
-			start = [ "launcher" "workspaces" ];
+			start = [ "launcher" "workspaces" "media" ];
 			left = [ {
 				colorizeSystemIcon = "none";
 				colorizeSystemText = "none";
@@ -308,6 +308,15 @@
 					stat2 = "ram_pct";
 				};
 			};
+			desktop-widget-0000000000000004 = {
+				box_height = 0.0;
+				box_width = 0.0;
+				cx = 333.0;
+				cy = 252.0;
+				output = "eDP-1";
+				rotation = 0.0;
+				type = "media_player";
+			};
 		};
 	};
 	dock = {
@@ -462,7 +471,7 @@
 	lockscreen_widgets = {
 		enabled = true;
 		schema_version = 2;
-		widget_order = [ "lockscreen-login-box@eDP-1" "lockscreen-widget-0000000000000001" "lockscreen-widget-0000000000000002" ];
+		widget_order = [ "lockscreen-login-box@eDP-1" "lockscreen-widget-0000000000000001" "lockscreen-widget-0000000000000002" "lockscreen-widget-0000000000000006" "lockscreen-widget-0000000000000007"];
 		grid = {
 			cell_size = 16;
 			major_interval = 4;
@@ -486,15 +495,41 @@
 				output = "eDP-1";
 				rotation = 0.0;
 				type = "clock";
+				settings = {
+				 background = true;
+				 background_opacity = 0.78;
+				 background_radius = 18.0;
+				 clock_style = "digital";
+				 color = "on_surface";
+				 format = "{:%H:%M:%S}";
+				};
 			};
 			lockscreen-widget-0000000000000002 = {
-				box_height = 128.0;
-				box_width = 320.0;
-				cx = 352.0;
-				cy = 524.0;
+				box_height = 96.0;
+				box_width = 416.0;
+				cx = 1672.0;
+				cy = 988.0;
 				output = "eDP-1";
 				rotation = 0.0;
 				type = "weather";
+			};
+			lockscreen-widget-0000000000000006 = {
+			 box_height = 0.0;
+			 box_width = 0.0;
+			 cx = 960.0;
+			 cy = 540.0;
+			 output = "eDP-1";
+			 rotation = 0.0;
+			 type = "fancy_audio_visualizer";
+			 settings.background = false;
+			};
+			lockscreen-widget-0000000000000007 = {
+			 box_height = 167.5;
+			 box_width = 362.0;
+			 cx = 244.0;
+			 cy = 931.0;
+			 rotation = 0.0;
+			 type = "media_player";
 			};
 		};
 	};
