@@ -9,6 +9,11 @@
       (load-theme 'noctalia t)
       (setq make-backup-files nil)
       (global-display-line-numbers-mode t)
+      (setq-default inhibit-startup-message t
+                use-short-answers t)
+      (tool-bar-mode -1)
+      (menu-bar-mode -1)
+      (scroll-bar-mode -1)
     '';
   };
 

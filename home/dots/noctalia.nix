@@ -337,7 +337,7 @@
 		launcher_position = "start";
 		monitors = [  ];
 		onlySameOutput = true;
-		pinned = [ "discord" "google-chrome" "kitty" "obsidian" "code" "org.gnome.Nautilus"  "com.github.johnfactotum.Foliate" ];
+		pinned = [ "discord" "google-chrome" "kitty" "obsidian" "emacs" "org.gnome.Nautilus"  "com.github.johnfactotum.Foliate" "virtualbox" "yazi" ];
 		pinnedApps = [ "google-chrome" "kitty" ];
 		pinnedStatic = true;
 		position = "left";
@@ -709,7 +709,7 @@
 	theme = {
 		source = "wallpaper";
 		templates = {
-			builtin_ids = [ "btop" "cava" "emacs" "gtk4" "kitty" "niri" "qt" "starship" ];
+			builtin_ids = [ "btop" "cava" "emacs" "gtk3" "gtk4" "kitty" "niri" "qt" "starship" ];
 			community_ids = [ "obsidian" "vscode" "discord" "papirus-icons" "steam" "yazi" ];
 		};
 	};

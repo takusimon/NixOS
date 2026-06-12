@@ -37,6 +37,7 @@ home = {
      imagemagick
      kdePackages.breeze
      foliate
+     btop
   ];
  };
 }
