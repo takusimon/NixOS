@@ -26,7 +26,6 @@
          directories = [
            ".ssh"
            ".config/google-chrome"
-	   ".config/obsidian"
 	   ".config/niri"
 	   ".config/gtk-3.0"
 	   ".config/gtk-4.0"
@@ -35,7 +34,6 @@
 	   ".config/Code"
 	   ".config/mozzila"
 	   ".config/discord"
-	   ".config/VirtualBox"
 	   ".local"
 	   ".config/noctalia"
 	   "Documents"

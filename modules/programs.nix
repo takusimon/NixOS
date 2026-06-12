@@ -6,5 +6,9 @@
 	 enable = true;
 	};
 	xwayland.enable = true;
+
+	steam = {
+	 enable = true;
+	};
      };
  }

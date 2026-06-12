@@ -314,7 +314,7 @@
 		animationSpeed = 1;
 		icon_size = 40;
 		backgroundOpacity = 1;
-		background_opacity = 0.0;
+		background_opacity = 0.35;
 		colorizeIcons = false;
 		deadOpacity = 0.6;
 		displayMode = "hidden";
@@ -337,7 +337,7 @@
 		launcher_position = "start";
 		monitors = [  ];
 		onlySameOutput = true;
-		pinned = [ "discord" "google-chrome" "kitty" "obsidian" "code" "org.gnome.Nautilus" ];
+		pinned = [ "discord" "google-chrome" "kitty" "obsidian" "code" "org.gnome.Nautilus"  "com.github.johnfactotum.Foliate" ];
 		pinnedApps = [ "google-chrome" "kitty" ];
 		pinnedStatic = true;
 		position = "left";
@@ -787,6 +787,10 @@
 	widget = {
 		date = {
 			format = "%H:%M:%S %a %b %-d";
+		};
+		battery = {
+		 display_mode = "graphic";
+		 hide_when_full = true;
 		};
 	};
 };

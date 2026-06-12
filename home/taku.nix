@@ -27,7 +27,6 @@ home = {
      kdePackages.okular
      nautilus
      discord
-     steam
      kdePackages.qt6ct
      starship
      papirus-icon-theme
@@ -37,6 +36,7 @@ home = {
      yazi
      imagemagick
      kdePackages.breeze
+     foliate
   ];
  };
 }
