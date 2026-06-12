@@ -5,7 +5,7 @@
       system = {
       	     autoUpgrade = {
 	     		 enable = true;
-			 flake = "/etc/nixos";
+			 flake = "/home/taku/NixOS";
 			 allowReboot = true;
 			 randomizedDelaySec = "45";
 			 dates = "Sun 12:00";

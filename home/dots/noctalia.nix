@@ -91,7 +91,7 @@
 				icon = "rocket";
 				iconColor = "none";
 				id = "Launcher";
-				useDistroLogo = false;
+				useDistroLogo = true;
 			} {
 				clockColor = "none";
 				customFont = "";
@@ -316,6 +316,9 @@
 				output = "eDP-1";
 				rotation = 0.0;
 				type = "media_player";
+				settings = {
+				 hide_when_no_media = true;
+				};
 			};
 		};
 	};
@@ -521,7 +524,11 @@
 			 output = "eDP-1";
 			 rotation = 0.0;
 			 type = "fancy_audio_visualizer";
-			 settings.background = false;
+			 settings = {
+			  background = false;
+			  fade_when_idle = true;
+			  visualization_mode = "bars_rings";
+			 };
 			};
 			lockscreen-widget-0000000000000007 = {
 			 box_height = 167.5;
@@ -530,6 +537,7 @@
 			 cy = 931.0;
 			 rotation = 0.0;
 			 type = "media_player";
+			 settings.hide_when_no_media = true;
 			};
 		};
 	};
