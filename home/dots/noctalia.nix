@@ -337,7 +337,7 @@
 		launcher_position = "start";
 		monitors = [  ];
 		onlySameOutput = true;
-		pinned = [ "discord" "google-chrome" "kitty" "obsidian" "emacs" "org.gnome.Nautilus"  "com.github.johnfactotum.Foliate" "virtualbox" "yazi" ];
+		pinned = [ "discord" "google-chrome" "kitty" "obsidian" "emacs" "org.gnome.Nautilus"  "com.github.johnfactotum.Foliate" "virtualbox" "org.kde.okular" ];
 		pinnedApps = [ "google-chrome" "kitty" ];
 		pinnedStatic = true;
 		position = "left";
