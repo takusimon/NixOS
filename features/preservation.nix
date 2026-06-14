@@ -34,6 +34,7 @@
 	   ".config/Code"
 	   ".config/mozzila"
 	   ".config/discord"
+	   ".config/sh.cider.genten"
 	   ".local/share/keyrings"
 	   ".local/share/Steam"
 	   ".steam"

@@ -11,6 +11,7 @@
 			 dates = "Sun 12:00";
 			 persistent = true;
 			 flags = [
+			  "--print-build-logs"
 			  "--commit-lock-file"
 			 ];
 	     };

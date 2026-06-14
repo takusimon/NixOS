@@ -28,5 +28,9 @@
 		    shellAliases = {
 		    		 emacs = "emacs -nw";
 		    };
+		    etc."gitconfig".text = ''
+		      [safe]
+   		      directory = /home/taku/NixOS
+		    '';
 	};
 }
