@@ -1,5 +1,5 @@
 {config,pkgs,...}:{
- home.file.".config/niri/config.kdl".text = ''
+n home.file.".config/niri/config.kdl".text = ''
 spawn-at-startup "noctalia"
 prefer-no-csd
   cursor {
@@ -129,14 +129,17 @@ binds {
 
       // Core Noctalia binds
     Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
-    Mod+S { spawn-sh "noctalia msg panel-toggle control-center"; }
+    Mod+C { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+Shift+Comma { spawn-sh "noctalia msg settings-toggle"; }
     Mod+V {spawn-sh "noctalia msg panel-toggle clipboard";}
     Mod+Y {spawn-sh "noctalia msg panel-toggle wallpaper";}
-    Mod+Escape {spawn-sh "noctalia msg session lock-and-suspend";}
-    Mod+bracketleft {spawn-sh "noctalia msg session shutdown";}
-    Mod+bracketright {spawn-sh "noctalia msg session reboot";}
-    
+    Mod+Shift+Escape {spawn-sh "noctalia msg session lock-and-suspend";}
+    Mod+Escape {spawn-sh "noctalia msg session lock";}    
+    Mod+Shift+bracketleft {spawn-sh "noctalia msg session shutdown";}
+    Mod+Shift+bracketright {spawn-sh "noctalia msg session reboot";}
+    Mod+D {spawn-sh "noctalia msg dock-toggle";}
+    Mod+Shift+D {spawn-sh "noctalia msg bar-toggle";}
+    Mod+S {spawn-sh "noctalia msg caffeine-toggle";}
 
     // Audio & Brightness
     XF86AudioRaiseVolume { spawn-sh "noctalia msg volume-up"; }
