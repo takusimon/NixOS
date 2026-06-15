@@ -1,4 +1,4 @@
-{config,pkgs,...}: {
+{config,pkgs,lib,...}: {
     #Set system services sound, desktop manager, etc
     services = {
     	    displayManager = {
