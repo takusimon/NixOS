@@ -39,6 +39,7 @@ home = {
      foliate
      btop
      cider-2
+     anki
   ];
  };
 }

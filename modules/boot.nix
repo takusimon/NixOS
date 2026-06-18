@@ -12,8 +12,6 @@
 	     ];
 	     theme = "unrap";
 	     extraConfig = ''
-	      ShowDelay=0
-	      DeviceTimeout=8
 	    '';
 	    };
 	  consoleLogLevel = 3;

@@ -37,6 +37,7 @@
 	   ".config/sh.cider.genten"
 	   ".local/share/keyrings"
 	   ".local/share/Steam"
+	   ".local/share/Anki2"
 	   ".steam"
 	   ".config/noctalia"
 	   ".local/state/noctalia"

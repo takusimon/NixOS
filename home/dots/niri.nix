@@ -1,5 +1,5 @@
 {config,pkgs,...}:{
-n home.file.".config/niri/config.kdl".text = ''
+home.file.".config/niri/config.kdl".text = ''
 spawn-at-startup "noctalia"
 prefer-no-csd
   cursor {
@@ -129,7 +129,7 @@ binds {
 
       // Core Noctalia binds
     Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
-    Mod+C { spawn-sh "noctalia msg panel-toggle control-center"; }
+    Mod+Shift+S { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+Shift+Comma { spawn-sh "noctalia msg settings-toggle"; }
     Mod+V {spawn-sh "noctalia msg panel-toggle clipboard";}
     Mod+Y {spawn-sh "noctalia msg panel-toggle wallpaper";}
