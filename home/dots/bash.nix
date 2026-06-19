@@ -12,6 +12,7 @@
        add = "git add .";
        cmt = "git commit";
        psh = "git push -u origin main";
+       status = "git status";
      };
      historySize = 10000;
      bashrcExtra = ''

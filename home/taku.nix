@@ -40,6 +40,7 @@ home = {
      btop
      cider-2
      anki
+     python3
   ];
  };
 }
