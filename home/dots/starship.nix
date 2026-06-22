@@ -5,7 +5,7 @@ programs.starship = {
 	palette = "noctalia";
 	add_newline = true;
 	format = ''
-$cmd_duration $directory$git_branch
+$cmd_duration $directory$nix_shell$git_branch
   $character'';
 	fill = {
 		symbol = "-";
@@ -93,6 +93,14 @@ $cmd_duration $directory$git_branch
 		min_time = 0;
 		format = "[](bold fg:252)[󰪢 $duration](bold bg:252 fg:235)[](bold fg:252)";
 	};
+	nix_shell = {
+	 disabled = false;
+	 symbol = "󱄅";
+	 impure_msg = "nix-shell";
+	 pure_msg = "pure-shell";
+	 unknown_msg = "unknwn-shell";
+	 format = " [](bold fg:252)[$symbol $state( \($name\))](bold bg:252 fg:235)[](bold fg:252)";
+       };
 	palettes = {
 		noctalia = {
 			blue = "#ffb4a5";
