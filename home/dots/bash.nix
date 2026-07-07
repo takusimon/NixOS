@@ -9,6 +9,7 @@
        nbs = "sudo nixos-rebuild switch --flake /home/taku/NixOS/#kernelpanic";
        nbb = "sudo nixos-rebuild boot --flake /home/taku/NixOS/#kernelpanic";
        nbt = "sudo nixos-rebuild test --flake /home/taku/NixOS/#kernelpanic";
+       nbd = "sudo nixos-rebuild build --flake /home/taku/NixOS/#kernelpanic";
        add = "git add .";
        cmt = "git commit";
        psh = "git push -u origin main";
