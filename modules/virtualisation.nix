@@ -2,8 +2,8 @@
 {
   virtualisation.virtualbox = {
     host = {
-     enable = true;
+     enable = false;
     };
-    guest.enable = true;
+    guest.enable = false;
    };
  }
