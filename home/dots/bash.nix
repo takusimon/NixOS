@@ -14,6 +14,7 @@
        cmt = "git commit";
        psh = "git push -u origin main";
        status = "git status";
+       mkdir = "mkdir -p";
      };
      historySize = 10000;
      bashrcExtra = ''
