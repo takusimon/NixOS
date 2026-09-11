@@ -42,6 +42,7 @@ home = {
      anki
      ticktick
      python314
+     onlyoffice-desktopeditors
   ];
  };
 }
