@@ -43,6 +43,7 @@ home = {
      ticktick
      python314
      onlyoffice-desktopeditors
+     cups
   ];
  };
 }
