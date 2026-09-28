@@ -32,7 +32,7 @@ input {
     keyboard
 
     touchpad {
-     off
+     //off
      tap
     }
     mouse
