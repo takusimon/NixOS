@@ -15,6 +15,8 @@
        psh = "git push -u origin main";
        status = "git status";
        mkdir = "mkdir -p";
+       chrome = "google-chrome";
+       "cd.."="cd ..";
      };
      historySize = 10000;
      bashrcExtra = ''
