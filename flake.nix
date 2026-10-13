@@ -11,6 +11,12 @@
       url = "github:noctalia-dev/noctalia";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    disko = {
+     url = "github:nix-community/disko";
+     inputs.nixpkgs.follows = "nixpkgs";
+   };
+   preservation.url = "github:nix-community/preservation";
+    
   };
 
   outputs = inputs@{ self, nixpkgs,home-manager,... }: {
@@ -20,6 +26,10 @@
      modules = [ ./configuration.nix
      	         home-manager.nixosModules.home-manager
      	         ./modules/home-manager.nix
+		 inputs.disko.nixosModules.disko
+		 inputs.preservation.nixosModules.default
+		 ./features/disko.nix
+		 ./features/preservation.nix
 	       ];
     };
   };
