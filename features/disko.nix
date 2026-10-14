@@ -47,7 +47,7 @@
     };
 
     content.partitions.root = {
-      name = "250G";
+      name = "root";
       size = "100%";
 
       content = {

@@ -4,7 +4,7 @@
 	enable = true;
 	settings = {
 	settingsVersion = 59;
-	appLauncher = {
+		appLauncher = {
 		autoPasteClipboard = false;
 		clipboardWatchImageCommand = "wl-paste --type image --watch cliphist store";
 		clipboardWatchTextCommand = "wl-paste --type text --watch cliphist store";
@@ -835,7 +835,8 @@
 		 display_mode = "graphic";
 		 hide_when_full = true;
 		};
-	};
+
+};
 };
 };
 }
