@@ -44,6 +44,7 @@ home = {
      python314
      onlyoffice-desktopeditors
      cups
+     nodejs_26
   ];
  };
 }
