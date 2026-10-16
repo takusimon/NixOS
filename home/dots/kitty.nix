@@ -6,6 +6,8 @@ programs.kitty = {
     size = 12;
   };
   extraConfig = ''
+     include themes/noctalia.conf
+     
     # BEGIN_KITTY_THEME
     # Noctalia
     include current-theme.conf
