@@ -347,12 +347,11 @@
 		launcherUseDistroLogo = false;
 		launcher_icon = "noctalia";
 		launcher_position = "start";
-		monitors = [  ];
 		onlySameOutput = true;
-		pinned = [ "discord" "google-chrome" "steam" "emacs" "cider-2" "org.gnome.Nautilus" "obsidian" "org.kde.okular" "code" ];
+		pinned = [ "discord" "google-chrome" "tick-tick" "steam" "emacs" "obsidian" "code" ];
 		pinnedApps = [ "google-chrome" "kitty" ];
 		pinnedStatic = true;
-		position = "left";
+		position = "bottom";
 		radius = 10;
 		showDockIndicator = false;
 		showLauncherIcon = false;
