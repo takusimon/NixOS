@@ -11,6 +11,7 @@
       url = "github:noctalia-dev/noctalia";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixvim.url = "github:nix-community/nixvim";
   };
 
   outputs = inputs@{ self, nixpkgs,home-manager,... }: {
@@ -20,6 +21,7 @@
      modules = [ ./configuration.nix
      	         home-manager.nixosModules.home-manager
      	         ./modules/home-manager.nix
+		 nixvim.homeModules.nixvim
 	       ];
     };
   };

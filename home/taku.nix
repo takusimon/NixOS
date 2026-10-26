@@ -10,6 +10,7 @@ imports = [
   ./dots/fastfetch.nix
   ./dots/niri.nix
   ./dots/noctalia.nix
+  ./dots/nixvim.nix
 	];
 home = {
   username = "taku";
