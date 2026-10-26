@@ -16,6 +16,7 @@ imports =
       ./modules/home-manager.nix
       ./modules/virtualisation.nix
       ./modules/hardware.nix
+      ./modules/nixvim.nix
 ];
 }
 
