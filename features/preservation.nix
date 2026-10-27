@@ -43,6 +43,7 @@
 	   "Documents"
 	   "NixOS"
 	   ".emacs.d"
+	   "repos"
          ];
       
          files = [
