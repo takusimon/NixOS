@@ -488,7 +488,7 @@ mm'';
 			visible = true;
 		};
 		widget = {
-			lockscreen-login-box@eDP-1 = {
+			"lockscreen-login-box@eDP-1" = {
 				box_height = 196.0;
 				box_width = 810.0;
 				cx = 960.0;
@@ -874,5 +874,6 @@ mm'';
 			format = "%H:%M:%S %a %b %-d";
 		};
 	};
+};
 };
 }
