@@ -12,6 +12,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixvim.url = "github:nix-community/nixvim";
+    preservation.url = "github:nix-community/preservation";
+    disko = {
+	url = "github:nix-community/disko";
+	inputs.nixpkgs.follows = "nixpkgs";
+   };
+
   };
 
   outputs = inputs@{ self, nixpkgs,home-manager,... }: {
@@ -22,6 +28,10 @@
      	         home-manager.nixosModules.home-manager
      	         ./modules/home-manager.nix
 		inputs.nixvim.nixosModules.nixvim
+		inputs.disko.nixosModules.disko
+		inputs.preservation.nixosModules.default
+		./features/disko.nix
+		./features/preservation.nix
 	       ];
     };
   };

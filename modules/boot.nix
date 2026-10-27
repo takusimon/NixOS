@@ -32,13 +32,6 @@
 			 timeoutStyle = "menu";
 			 configurationLimit = 10;
 			 theme = ../home/tartarus;
-			 useOSProber = true;
-			 extraEntries = ''
-			  menuentry "Kali Linux" {
-			  search --no-floppy --fs-uuid --set=root CFE0-778E
-			  chainloader /EFI/kali/grubx64.efi
-			  }
-			  '';
 		   };
 		   efi = {
 		       efiSysMountPoint = "/boot";

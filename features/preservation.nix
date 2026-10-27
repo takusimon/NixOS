@@ -9,9 +9,8 @@
 	 directory = "/etc";
 	 inInitrd = true;
 	}
-        "/var/log"
-	"/var/lib/bluetooth"
-	"/etc/NetworkManager/system-connections"
+	"/var"
+	"/sys"
         {
           directory = "/var/lib/nixos";
           inInitrd = true;
