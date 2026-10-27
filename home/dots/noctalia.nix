@@ -705,7 +705,7 @@ mm'';
 		avatar_path = "/home/taku/NixOS/home/wallpapers/spiderman.png";
 		clipboard_confirm_clear_history = false;
 		corner_radius_scale = 2.0;
-		font_family = "JetBrainsMono NFP";
+		font_family = "OpenDyslexicM NFP";
 		launch_apps_as_systemd_services = true;
 		password_style = "random";
 		polkit_agent = true;

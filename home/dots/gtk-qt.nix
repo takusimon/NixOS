@@ -9,8 +9,8 @@
      icon_theme = "Papirus-Dark";
     };
     Fonts = {
-     fixed = "\"JetBrainsMono Nerd Font Propo, 12\"";
-     general = "JetBrainsMono Nerd Font Propo, 12\"";
+     fixed = "\"OpenDyslexicM Nerd Font Propo, 12\"";
+     general = "OpenDyslexicM Nerd Font Propo, 12\"";
     };
    };
 
@@ -22,8 +22,8 @@
      icon_theme = "Papirus-Dark";
    };
    Fonts = {
-     fixed = "\"JetBrainsMono Nerd Font Propo, 12\"";
-     general = "JetBrainsMono Nerd Font Propo, 12\"";
+     fixed = "\"OpenDyslexicM Nerd Font Propo, 12\"";
+     general = "OpenDyslexicM Nerd Font Propo, 12\"";
     };
  };
 };

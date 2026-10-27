@@ -271,6 +271,6 @@ binds {
     Mod+Shift+Minus { set-window-height "-1%"; }
     Mod+Shift+Equal { set-window-height "+1%"; }
 }
-//include "./noctalia.kdl"
+include "./noctalia.kdl"
 '';
 }
