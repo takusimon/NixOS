@@ -43,7 +43,8 @@
 	   "Documents"
 	   "NixOS"
 	   ".emacs.d"
-	   "repos"
+	   "personal_repos"
+	   "work"
          ];
       
          files = [

@@ -11,4 +11,10 @@
 		User git
 		IdentityFile ~/.ssh/id_ed25519_cyber
 	'';
+
+	home.file."work/.gitconfig".text = ''
+	  [user]
+	    name = blkghst
+	    email = blkghstcyber@gmail.com
+	'';
 }
