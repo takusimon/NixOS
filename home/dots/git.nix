@@ -14,8 +14,8 @@
      	condition = "gitdir:~/work/";
 	contents = {
 	 user = {
-	      name = blkghst;
-	      email = blkghstcyber@gmail.com
+	      name = "blkghst";
+	      email = "blkghstcyber@gmail.com";
 	 };
 	};
       }

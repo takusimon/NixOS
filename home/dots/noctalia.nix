@@ -810,7 +810,7 @@ mm'';
 	};
 	wallpaper = {
 		automationEnabled = false;
-		directory = "/home/taku/repos/wallpapers";
+		directory = "/home/taku/personal_repos/wallpapers";
 		enableMultiMonitorDirectories = false;
 		enabled = true;
 		favorites = [  ];
