@@ -2,7 +2,7 @@
 programs.kitty = {
   enable = true;
   font = {
-    name = "OpenDyslexicM Nerd Font Propo";
+    name = "OpenDyslexicM Nerd Font Mono";
     size = 12;
   };
   extraConfig = ''

@@ -9,8 +9,8 @@
      icon_theme = "Papirus-Dark";
     };
     Fonts = {
-     fixed = "\"OpenDyslexicM Nerd Font Propo, 12\"";
-     general = "OpenDyslexicM Nerd Font Propo, 12\"";
+     fixed = "\"OpenDyslexicM Nerd Font Propo Regular, 12\"";
+     general = "OpenDyslexicM Nerd Font Propo Regular, 12\"";
     };
    };
 
@@ -22,8 +22,8 @@
      icon_theme = "Papirus-Dark";
    };
    Fonts = {
-     fixed = "\"OpenDyslexicM Nerd Font Propo, 12\"";
-     general = "OpenDyslexicM Nerd Font Propo, 12\"";
+     fixed = "\"OpenDyslexicM Nerd Font Propo Regular, 12\"";
+     general = "OpenDyslexicM Nerd Font Propo Regular, 12\"";
     };
  };
 };
@@ -31,7 +31,7 @@
 gtk = {
  enable = true;
  font = {
-  name = "JetBrainsMono Nerd Font Propo";
+  name = "OpenDyslexicM Nerd Font Propo Regular";
   size = 12;
  };
  iconTheme.name = "Papirus-Dark";
