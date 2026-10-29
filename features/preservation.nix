@@ -38,6 +38,8 @@
 	   ".local/share/Steam"
 	   ".local/share/Anki2"
 	   ".steam"
+	   ".vscode"
+	   ".vscode-shared"
 	   ".config/noctalia"
 	   ".local/state/noctalia"
 	   "Documents"
