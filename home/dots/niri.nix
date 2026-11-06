@@ -121,6 +121,15 @@ window-rule {
 
 	default-column-display "tabbed"
 }
+workspace ""
+workspace ""
+workspace ""
+workspace ""
+workspace ""
+
+
+
+
 binds {
      // === System & Overview ===
     Mod+Tab repeat=false { toggle-overview; }
@@ -217,10 +226,10 @@ binds {
     // === Move Workspaces ===
     Mod+Shift+Page_Down { move-workspace-down; }
     Mod+Shift+Page_Up   { move-workspace-up; }
-    Mod+Shift+Y 			  { move-workspace-to-monitor-previous; }
+    Mod+Shift+Y 	{ move-workspace-to-monitor-previous; }
     Mod+Shift+U         { move-workspace-down; }
     Mod+Shift+I         { move-workspace-up; }
-    Mod+Shift+O 			  { move-workspace-to-monitor-next; }
+    Mod+Shift+O 	{ move-workspace-to-monitor-next; }
 
     // === Mouse Wheel Navigation ===
     Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
@@ -231,27 +240,19 @@ binds {
     Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
     Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
 
-    // === Numbered Workspaces ===
-    Mod+1 { focus-workspace 1; }
-    Mod+2 { focus-workspace 2; }
-    Mod+3 { focus-workspace 3; }
-    Mod+4 { focus-workspace 4; }
-    Mod+5 { focus-workspace 5; }
-    Mod+6 { focus-workspace 6; }
-    Mod+7 { focus-workspace 7; }
-    Mod+8 { focus-workspace 8; }
-    Mod+9 { focus-workspace 9; }
+    // === Named Workspaces ===
+    Mod+1 { focus-workspace ""; }
+    Mod+2 { focus-workspace ""; }
+    Mod+3 { focus-workspace ""; }
+    Mod+4 { focus-workspace ""; }
+    Mod+5 { focus-workspace ""; }
 
-    // === Move to Numbered Workspaces ===
-    Mod+Shift+1 { move-column-to-workspace 1; }
-    Mod+Shift+2 { move-column-to-workspace 2; }
-    Mod+Shift+3 { move-column-to-workspace 3; }
-    Mod+Shift+4 { move-column-to-workspace 4; }
-    Mod+Shift+5 { move-column-to-workspace 5; }
-    Mod+Shift+6 { move-column-to-workspace 6; }
-    Mod+Shift+7 { move-column-to-workspace 7; }
-    Mod+Shift+8 { move-column-to-workspace 8; }
-    Mod+Shift+9 { move-column-to-workspace 9; }
+    // === Move to Named Workspaces ===
+    Mod+Shift+1 { move-column-to-workspace ""; }
+    Mod+Shift+2 { move-column-to-workspace ""; }
+    Mod+Shift+3 { move-column-to-workspace ""; }
+    Mod+Shift+4 { move-column-to-workspace ""; }
+    Mod+Shift+5 { move-column-to-workspace ""; }
 
     // === Column Management ===
     Mod+Comma  { consume-or-expel-window-left; }

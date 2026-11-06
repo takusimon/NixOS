@@ -46,6 +46,7 @@ home = {
      onlyoffice-desktopeditors
      cups
      nodejs_26
+     alacritty
   ];
  };
 }
