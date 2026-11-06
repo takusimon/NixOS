@@ -15,8 +15,6 @@
 	    '';
 	    };
 	  consoleLogLevel = 3;
-	     initrd.systemd.enable = true;
-	     initrd.verbose = false;
 	     kernelParams = [
 	      "quiet"
 	      "splash"

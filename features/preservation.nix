@@ -42,6 +42,8 @@
 	   ".vscode-shared"
 	   ".config/noctalia"
 	   ".local/state/noctalia"
+	   ".config/obsidian"
+	   ".config/ticktick"
 	   "Documents"
 	   "NixOS"
 	   ".emacs.d"
